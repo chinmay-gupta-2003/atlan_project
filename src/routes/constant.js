@@ -1,3 +1,4 @@
+import Login from "pages/Login/Login";
 import { Navigate } from "react-router-dom";
 
 export const authRoutes = [
@@ -8,9 +9,15 @@ export const authRoutes = [
   },
   {
     path: "/login",
-    component: <></>,
+    component: <Login />,
     title: "Login",
   },
 ];
 
-export const protectedRoutes = [];
+export const protectedRoutes = [
+  {
+    path: "/home",
+    component: <>home</>,
+    title: "Home",
+  },
+];
