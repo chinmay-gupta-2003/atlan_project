@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-white: #ffffff;
+  --secondary-white: #f5f5f5;
+  --primary-black: #343a40;
+  --secondary-black: #495057;
+  --primary-teal: #1dbbc3;
+  --secondary-teal: #17ddd6;
+  --tertiary-teal: #0c8599;
+  --primary-cyan: #e3fafc;
+  --primary-green: #20c997;
+  --secondary-green: #ebfbee;
+  --primary-red: #d9480f;
+  --secondary-red: #ffe3e3;
+  --primary-gray: #868e96;
+  --primary-pink: #d6336c;
+  --primary-grape: #be4bdb;
+  --primary-violate: #7048e8;
+  --primary-orange: #f76707;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiddenScroll::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfdfd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #065e87;
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #054867;
 }
