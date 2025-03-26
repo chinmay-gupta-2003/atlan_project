@@ -3,19 +3,29 @@ import { useState } from "react";
 import styles from "components/Table/Table.module.css";
 import Pagination from "components/Pagination/Pagination";
 import { setPaginationData, totalPages } from "utils/pagination";
+import { sortData } from "utils/sortData";
 
 function Table({ data = [], columns = [] }) {
   const [pageNumber, setPageNumber] = useState(1);
-  const [pageLimit, setPageLimit] = useState(100);
-
-  const paginateTableData = (data) => {
-    return setPaginationData(data, pageNumber, pageLimit);
-  };
+  const [pageLimit, setPageLimit] = useState(10);
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
   const handlePageLimitChange = (event) => {
     setPageLimit(Number(event.target.value));
     setPageNumber(1);
   };
+
+  const handleSort = (key) => {
+    setSortConfig((prev) => {
+      if (prev.key === key) {
+        return { key, direction: prev.direction === "asc" ? "desc" : "asc" };
+      }
+
+      return { key, direction: "asc" };
+    });
+  };
+
+  const sortedData = sortData(data, sortConfig);
 
   return (
     <div className={styles.container}>
@@ -23,24 +33,34 @@ function Table({ data = [], columns = [] }) {
         <table className={styles.table}>
           <thead>
             <tr>
-              {columns.map((head, i) => {
-                return (
-                  <th key={i}>
-                    <span>{head.header}</span>
-                  </th>
-                );
-              })}
+              {columns.map((col, i) => (
+                <th key={i}>
+                  <p
+                    className={styles.sortable}
+                    onClick={() => handleSort(col.accessorKey)}
+                  >
+                    <span>{col.header}</span>
+                    {sortConfig.key === col.accessorKey
+                      ? sortConfig.direction === "asc"
+                        ? "▲"
+                        : "▼"
+                      : ""}
+                  </p>
+                </th>
+              ))}
             </tr>
           </thead>
 
           <tbody>
-            {paginateTableData(data).map((row, i) => (
-              <tr key={i}>
-                {columns.map((col, j) => (
-                  <td key={j}>{row[col.accessorKey]}</td>
-                ))}
-              </tr>
-            ))}
+            {setPaginationData(sortedData, pageNumber, pageLimit).map(
+              (row, i) => (
+                <tr key={i}>
+                  {columns.map((col, j) => (
+                    <td key={j}>{row[col.accessorKey]}</td>
+                  ))}
+                </tr>
+              )
+            )}
           </tbody>
         </table>
       </div>

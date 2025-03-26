@@ -53,3 +53,15 @@
   border: 2px solid var(--primary-teal);
   outline: none;
 }
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sortable:hover {
+  background-color: var(--primary-);
+}
