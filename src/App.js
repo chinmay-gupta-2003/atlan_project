@@ -1,17 +1,21 @@
-import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
+import { BrowserRouter } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
-import Router from "./routes/routes";
+import store from "store/store";
+import Router from "routes/routes";
 
 function App() {
   return (
-    <div className="container">
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-      <ToastContainer />
-    </div>
+    <Provider store={store}>
+      <div className="container">
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+        <ToastContainer />
+      </div>
+    </Provider>
   );
 }
 

@@ -1,12 +1,26 @@
 import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, Outlet } from "react-router-dom";
-import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/solid";
 
+import { tables } from "constants/tables";
+import { databases } from "constants/databases";
 import avatar from "assets/images/avatar.jpg";
-import styles from "components/Sidebar/Sidebar.module.css";
+import {
+  ArrowRightEndOnRectangleIcon,
+  CircleStackIcon,
+  TableCellsIcon,
+} from "@heroicons/react/24/solid";
 
-function Sidebar({ tableSelected, setTableSelected }) {
+import styles from "components/Sidebar/Sidebar.module.css";
+import { setDatabaseSelected, setTableSelected } from "store/databaseSlice";
+
+function Sidebar() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { tableSelected, databaseSelected } = useSelector(
+    (state) => state.database
+  );
 
   const logout = () => {
     localStorage.clear();
@@ -26,18 +40,49 @@ function Sidebar({ tableSelected, setTableSelected }) {
           </div>
         </div>
 
-        <div className={`${styles.conversationList} ${styles.hiddenScroll}`}>
-          {[].map((conversation) => (
-            <div
-              key={conversation._id}
-              className={`${styles.chatLink} ${
-                tableSelected._id === conversation._id ? styles.active : ""
-              }`}
-              onClick={() => setTableSelected(conversation)}
-            >
-              <p>{conversation.name}</p>
-            </div>
-          ))}
+        <div className={styles.divider}></div>
+
+        <div className={styles.subContainer}>
+          <div className={styles.flexAlign}>
+            <CircleStackIcon className={styles.icon} />
+            <p className={styles.heading}>Databases</p>
+          </div>
+
+          <div className={`${styles.databaseList} ${styles.hiddenScroll}`}>
+            {databases.map((database) => (
+              <div
+                key={database.id}
+                className={`${styles.databaseLink} ${
+                  databaseSelected.id === database.id ? styles.active : ""
+                }`}
+                onClick={() => dispatch(setDatabaseSelected(database))}
+              >
+                <p>{database.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.divider}></div>
+
+        <div className={styles.subContainer}>
+          <div className={styles.flexAlign}>
+            <TableCellsIcon className={styles.icon} />
+            <p className={styles.heading}>Tables</p>
+          </div>
+          <div className={`${styles.databaseList} ${styles.hiddenScroll}`}>
+            {tables[databaseSelected.id]?.map((table) => (
+              <div
+                key={table.id}
+                className={`${styles.databaseLink} ${
+                  tableSelected.id === table.id ? styles.active : ""
+                }`}
+                onClick={() => dispatch(setTableSelected(table))}
+              >
+                <p>{table.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className={styles.logout} onClick={logout}>

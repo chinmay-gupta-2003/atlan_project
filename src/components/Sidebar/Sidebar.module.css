@@ -36,16 +36,6 @@
   color: var(--primary-white);
 }
 
-.conversationList {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  overflow-y: auto;
-  width: 100%;
-  flex-grow: 1;
-  padding: 0 1rem;
-}
-
 .sidebarGradient {
   background: linear-gradient(
     178deg,
@@ -56,19 +46,43 @@
   );
 }
 
-.chatLink.active {
-  background-color: rgba(255, 255, 255, 0.1);
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.chatLink:hover {
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.databaseList {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  flex-grow: 1;
+  gap: 0.6rem;
+  padding: 0 1rem;
+}
+
+.databaseLink {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: var(--primary-white);
+}
+
+.databaseLink.active {
+  background-color: var(--primary-teal);
+  font-weight: 500;
+}
+
+.databaseLink:hover {
   cursor: pointer;
   transition: all 0.3s ease-out;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.active {
-  background: var(--primary-teal);
-  color: var(--primary-white);
+  background-color: var(--primary-teal);
 }
 
 .logout {
@@ -91,4 +105,18 @@
 
 .icon {
   height: 2rem;
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--primary-white);
+  margin: 0 1rem;
+}
+
+.flexAlign {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  color: var(--secondary-teal);
 }
