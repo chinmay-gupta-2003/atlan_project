@@ -71,17 +71,23 @@ function Sidebar() {
             <p className={styles.heading}>Tables</p>
           </div>
           <div className={`${styles.databaseList} ${styles.hiddenScroll}`}>
-            {tables[databaseSelected.id]?.map((table) => (
-              <div
-                key={table.id}
-                className={`${styles.databaseLink} ${
-                  tableSelected.id === table.id ? styles.active : ""
-                }`}
-                onClick={() => dispatch(setTableSelected(table))}
-              >
-                <p>{table.name}</p>
-              </div>
-            ))}
+            {!databaseSelected.id && (
+              <p className={styles.text}>
+                Please select a database to view tables.
+              </p>
+            )}
+            {databaseSelected.id &&
+              tables[databaseSelected.id].map((table) => (
+                <div
+                  key={table.id}
+                  className={`${styles.databaseLink} ${
+                    tableSelected.id === table.id ? styles.active : ""
+                  }`}
+                  onClick={() => dispatch(setTableSelected(table))}
+                >
+                  <p>{table.name}</p>
+                </div>
+              ))}
           </div>
         </div>
 
