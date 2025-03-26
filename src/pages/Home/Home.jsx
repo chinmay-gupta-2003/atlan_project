@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import React, { useEffect, useState } from "react";
+import { PulseLoader } from "react-spinners";
 
 import Table from "components/Table/Table";
 import { getTableData } from "utils/getTableData";
@@ -16,15 +17,21 @@ function Home() {
   const [tableData, setTableData] = useState([]);
   const [columns, setColumns] = useState([]);
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const fetchData = async () => {
     if (tableSelected.id) {
       try {
+        setIsLoading(true);
+
         const data = await getTableData(tableSelected.id);
 
         setTableData(data);
         setColumns(columnsMapping[tableSelected.id]);
       } catch (error) {
         console.error("Error fetching table data:", error);
+      } finally {
+        setIsLoading(false);
       }
     }
   };
@@ -35,8 +42,15 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      {tableSelected.id && <Table data={tableData} columns={columns} />}
-      {!tableSelected.id && (
+      {isLoading && (
+        <div className={styles.loader}>
+          <PulseLoader color={"#17ddd6"} />
+        </div>
+      )}
+      {tableSelected.id && !isLoading && (
+        <Table data={tableData} columns={columns} />
+      )}
+      {!tableSelected.id && !isLoading && (
         <div className={styles.subContainer}>
           <img src={home} alt="image" className={styles.image} />
           <span>
