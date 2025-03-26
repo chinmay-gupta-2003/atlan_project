@@ -1,8 +1,18 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .tableCont {
   border: 2px solid var(--secondary-gray);
   border-radius: 1rem 0.4rem 0.4rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: auto;
-  height: 100%;
+  background-color: var(--primary-white);
 }
 
 .table {
@@ -27,4 +37,19 @@
 
 .table tr:nth-child(even) {
   background-color: var(--ternary-white);
+}
+
+.paginateContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 1rem;
+}
+
+.select {
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  border: 2px solid var(--primary-teal);
+  outline: none;
 }
