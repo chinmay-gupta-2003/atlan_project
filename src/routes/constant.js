@@ -1,5 +1,7 @@
-import Login from "pages/Login/Login";
 import { Navigate } from "react-router-dom";
+
+import Home from "pages/Login/Home/Home";
+import Login from "pages/Login/Login";
 
 export const authRoutes = [
   {
@@ -17,7 +19,7 @@ export const authRoutes = [
 export const protectedRoutes = [
   {
     path: "/home",
-    component: <>home</>,
+    component: <Home />,
     title: "Home",
   },
 ];

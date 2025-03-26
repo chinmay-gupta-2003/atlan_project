@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  height: 100%;
+  justify-self: start;
+  width: 100%;
+}
+
+.sidebar {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.outlet {
+  flex-grow: 1;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-white);
+}
+
+.conversationList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.sidebarGradient {
+  background: linear-gradient(
+    178deg,
+    #082c66 0.1%,
+    #003d73 47.98%,
+    #026e8e 79.33%,
+    #067591 100%
+  );
+}
+
+.chatLink.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatLink:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+  background: var(--primary-teal);
+  color: var(--primary-white);
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  margin-top: auto;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--secondary-red);
+  color: var(--primary-red);
+  transition: background 0.3s;
+}
+
+.logout:hover {
+  background-color: var(--primary-red);
+  color: var(--secondary-red);
+}
+
+.icon {
+  height: 2rem;
+}
