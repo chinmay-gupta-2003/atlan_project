@@ -1,0 +1,11 @@
+.input {
+  border: 1px solid var(--primary-black);
+  border-radius: 0.6rem;
+  padding: 0.8rem 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-teal);
+  box-shadow: 0 0 5px var(--secondary-teal);
+}
