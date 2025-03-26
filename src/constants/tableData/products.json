@@ -1,0 +1,1202 @@
+[
+    {
+        "id": 1,
+        "name": "Soldier",
+        "category": "Books",
+        "price": 118.61
+    },
+    {
+        "id": 2,
+        "name": "Appear",
+        "category": "Home & Kitchen",
+        "price": 812.56
+    },
+    {
+        "id": 3,
+        "name": "Show",
+        "category": "Books",
+        "price": 174.5
+    },
+    {
+        "id": 4,
+        "name": "Break",
+        "category": "Clothing",
+        "price": 992.26
+    },
+    {
+        "id": 5,
+        "name": "Writer",
+        "category": "Electronics",
+        "price": 16.34
+    },
+    {
+        "id": 6,
+        "name": "Off",
+        "category": "Home & Kitchen",
+        "price": 328.78
+    },
+    {
+        "id": 7,
+        "name": "Economy",
+        "category": "Electronics",
+        "price": 524.7
+    },
+    {
+        "id": 8,
+        "name": "City",
+        "category": "Electronics",
+        "price": 424.55
+    },
+    {
+        "id": 9,
+        "name": "Sister",
+        "category": "Books",
+        "price": 978.78
+    },
+    {
+        "id": 10,
+        "name": "Tv",
+        "category": "Books",
+        "price": 47.46
+    },
+    {
+        "id": 11,
+        "name": "Military",
+        "category": "Books",
+        "price": 882.82
+    },
+    {
+        "id": 12,
+        "name": "Assume",
+        "category": "Clothing",
+        "price": 338.41
+    },
+    {
+        "id": 13,
+        "name": "East",
+        "category": "Books",
+        "price": 858.97
+    },
+    {
+        "id": 14,
+        "name": "Effect",
+        "category": "Electronics",
+        "price": 822.47
+    },
+    {
+        "id": 15,
+        "name": "Natural",
+        "category": "Books",
+        "price": 318.38
+    },
+    {
+        "id": 16,
+        "name": "Real",
+        "category": "Clothing",
+        "price": 327.29
+    },
+    {
+        "id": 17,
+        "name": "Provide",
+        "category": "Electronics",
+        "price": 958.41
+    },
+    {
+        "id": 18,
+        "name": "Pass",
+        "category": "Clothing",
+        "price": 331.83
+    },
+    {
+        "id": 19,
+        "name": "Beautiful",
+        "category": "Books",
+        "price": 872.17
+    },
+    {
+        "id": 20,
+        "name": "Dark",
+        "category": "Clothing",
+        "price": 883.36
+    },
+    {
+        "id": 21,
+        "name": "Weight",
+        "category": "Electronics",
+        "price": 630.08
+    },
+    {
+        "id": 22,
+        "name": "Effect",
+        "category": "Home & Kitchen",
+        "price": 848.22
+    },
+    {
+        "id": 23,
+        "name": "Personal",
+        "category": "Books",
+        "price": 597.09
+    },
+    {
+        "id": 24,
+        "name": "Fire",
+        "category": "Books",
+        "price": 17.41
+    },
+    {
+        "id": 25,
+        "name": "State",
+        "category": "Electronics",
+        "price": 652.17
+    },
+    {
+        "id": 26,
+        "name": "Yet",
+        "category": "Clothing",
+        "price": 206.63
+    },
+    {
+        "id": 27,
+        "name": "Must",
+        "category": "Home & Kitchen",
+        "price": 546.44
+    },
+    {
+        "id": 28,
+        "name": "Protect",
+        "category": "Electronics",
+        "price": 123.01
+    },
+    {
+        "id": 29,
+        "name": "Owner",
+        "category": "Electronics",
+        "price": 999.48
+    },
+    {
+        "id": 30,
+        "name": "Every",
+        "category": "Clothing",
+        "price": 381.31
+    },
+    {
+        "id": 31,
+        "name": "Glass",
+        "category": "Home & Kitchen",
+        "price": 202.4
+    },
+    {
+        "id": 32,
+        "name": "Development",
+        "category": "Electronics",
+        "price": 462.74
+    },
+    {
+        "id": 33,
+        "name": "Either",
+        "category": "Home & Kitchen",
+        "price": 256.32
+    },
+    {
+        "id": 34,
+        "name": "Itself",
+        "category": "Electronics",
+        "price": 693.79
+    },
+    {
+        "id": 35,
+        "name": "Perhaps",
+        "category": "Clothing",
+        "price": 696.38
+    },
+    {
+        "id": 36,
+        "name": "Population",
+        "category": "Home & Kitchen",
+        "price": 916.76
+    },
+    {
+        "id": 37,
+        "name": "Tv",
+        "category": "Books",
+        "price": 409.28
+    },
+    {
+        "id": 38,
+        "name": "Food",
+        "category": "Home & Kitchen",
+        "price": 956.41
+    },
+    {
+        "id": 39,
+        "name": "Easy",
+        "category": "Electronics",
+        "price": 919.05
+    },
+    {
+        "id": 40,
+        "name": "Bad",
+        "category": "Electronics",
+        "price": 855.66
+    },
+    {
+        "id": 41,
+        "name": "Seat",
+        "category": "Electronics",
+        "price": 993.46
+    },
+    {
+        "id": 42,
+        "name": "Blood",
+        "category": "Electronics",
+        "price": 525.68
+    },
+    {
+        "id": 43,
+        "name": "Nature",
+        "category": "Home & Kitchen",
+        "price": 946.35
+    },
+    {
+        "id": 44,
+        "name": "Artist",
+        "category": "Home & Kitchen",
+        "price": 603.48
+    },
+    {
+        "id": 45,
+        "name": "Book",
+        "category": "Books",
+        "price": 106.07
+    },
+    {
+        "id": 46,
+        "name": "Specific",
+        "category": "Clothing",
+        "price": 347.16
+    },
+    {
+        "id": 47,
+        "name": "Range",
+        "category": "Electronics",
+        "price": 29.05
+    },
+    {
+        "id": 48,
+        "name": "Arrive",
+        "category": "Books",
+        "price": 772.78
+    },
+    {
+        "id": 49,
+        "name": "Early",
+        "category": "Clothing",
+        "price": 111.82
+    },
+    {
+        "id": 50,
+        "name": "Fund",
+        "category": "Clothing",
+        "price": 973.5
+    },
+    {
+        "id": 51,
+        "name": "Indeed",
+        "category": "Books",
+        "price": 853.53
+    },
+    {
+        "id": 52,
+        "name": "Order",
+        "category": "Clothing",
+        "price": 890.9
+    },
+    {
+        "id": 53,
+        "name": "Will",
+        "category": "Books",
+        "price": 290.49
+    },
+    {
+        "id": 54,
+        "name": "Receive",
+        "category": "Clothing",
+        "price": 813.1
+    },
+    {
+        "id": 55,
+        "name": "Region",
+        "category": "Home & Kitchen",
+        "price": 776.76
+    },
+    {
+        "id": 56,
+        "name": "Side",
+        "category": "Clothing",
+        "price": 839.14
+    },
+    {
+        "id": 57,
+        "name": "Well",
+        "category": "Books",
+        "price": 236.62
+    },
+    {
+        "id": 58,
+        "name": "Beat",
+        "category": "Home & Kitchen",
+        "price": 338.33
+    },
+    {
+        "id": 59,
+        "name": "Through",
+        "category": "Clothing",
+        "price": 879.27
+    },
+    {
+        "id": 60,
+        "name": "Consider",
+        "category": "Home & Kitchen",
+        "price": 178.4
+    },
+    {
+        "id": 61,
+        "name": "Choice",
+        "category": "Books",
+        "price": 299.48
+    },
+    {
+        "id": 62,
+        "name": "Thousand",
+        "category": "Home & Kitchen",
+        "price": 60.64
+    },
+    {
+        "id": 63,
+        "name": "Past",
+        "category": "Home & Kitchen",
+        "price": 272.56
+    },
+    {
+        "id": 64,
+        "name": "Work",
+        "category": "Electronics",
+        "price": 901.47
+    },
+    {
+        "id": 65,
+        "name": "However",
+        "category": "Home & Kitchen",
+        "price": 834.4
+    },
+    {
+        "id": 66,
+        "name": "Agree",
+        "category": "Home & Kitchen",
+        "price": 120.8
+    },
+    {
+        "id": 67,
+        "name": "Something",
+        "category": "Electronics",
+        "price": 766.07
+    },
+    {
+        "id": 68,
+        "name": "No",
+        "category": "Books",
+        "price": 957.21
+    },
+    {
+        "id": 69,
+        "name": "Body",
+        "category": "Books",
+        "price": 853.06
+    },
+    {
+        "id": 70,
+        "name": "Film",
+        "category": "Electronics",
+        "price": 950.71
+    },
+    {
+        "id": 71,
+        "name": "Father",
+        "category": "Home & Kitchen",
+        "price": 476.97
+    },
+    {
+        "id": 72,
+        "name": "Store",
+        "category": "Clothing",
+        "price": 47.27
+    },
+    {
+        "id": 73,
+        "name": "Capital",
+        "category": "Books",
+        "price": 575.2
+    },
+    {
+        "id": 74,
+        "name": "Issue",
+        "category": "Clothing",
+        "price": 214.39
+    },
+    {
+        "id": 75,
+        "name": "Lead",
+        "category": "Electronics",
+        "price": 400.49
+    },
+    {
+        "id": 76,
+        "name": "Now",
+        "category": "Books",
+        "price": 552.23
+    },
+    {
+        "id": 77,
+        "name": "Drop",
+        "category": "Electronics",
+        "price": 16.06
+    },
+    {
+        "id": 78,
+        "name": "Crime",
+        "category": "Home & Kitchen",
+        "price": 969.99
+    },
+    {
+        "id": 79,
+        "name": "Interesting",
+        "category": "Books",
+        "price": 42.94
+    },
+    {
+        "id": 80,
+        "name": "Sit",
+        "category": "Clothing",
+        "price": 643.85
+    },
+    {
+        "id": 81,
+        "name": "Trial",
+        "category": "Clothing",
+        "price": 215.39
+    },
+    {
+        "id": 82,
+        "name": "Feeling",
+        "category": "Electronics",
+        "price": 217.72
+    },
+    {
+        "id": 83,
+        "name": "Trade",
+        "category": "Home & Kitchen",
+        "price": 906.03
+    },
+    {
+        "id": 84,
+        "name": "Brother",
+        "category": "Clothing",
+        "price": 32.66
+    },
+    {
+        "id": 85,
+        "name": "War",
+        "category": "Books",
+        "price": 347.6
+    },
+    {
+        "id": 86,
+        "name": "Institution",
+        "category": "Clothing",
+        "price": 379.85
+    },
+    {
+        "id": 87,
+        "name": "Film",
+        "category": "Clothing",
+        "price": 301.73
+    },
+    {
+        "id": 88,
+        "name": "To",
+        "category": "Clothing",
+        "price": 726.26
+    },
+    {
+        "id": 89,
+        "name": "Personal",
+        "category": "Electronics",
+        "price": 846.73
+    },
+    {
+        "id": 90,
+        "name": "Property",
+        "category": "Electronics",
+        "price": 799.29
+    },
+    {
+        "id": 91,
+        "name": "Husband",
+        "category": "Home & Kitchen",
+        "price": 756.58
+    },
+    {
+        "id": 92,
+        "name": "Poor",
+        "category": "Books",
+        "price": 846.42
+    },
+    {
+        "id": 93,
+        "name": "Dark",
+        "category": "Home & Kitchen",
+        "price": 362.85
+    },
+    {
+        "id": 94,
+        "name": "Only",
+        "category": "Home & Kitchen",
+        "price": 144.45
+    },
+    {
+        "id": 95,
+        "name": "Soldier",
+        "category": "Home & Kitchen",
+        "price": 661.57
+    },
+    {
+        "id": 96,
+        "name": "To",
+        "category": "Books",
+        "price": 154.83
+    },
+    {
+        "id": 97,
+        "name": "Most",
+        "category": "Home & Kitchen",
+        "price": 799.02
+    },
+    {
+        "id": 98,
+        "name": "Six",
+        "category": "Clothing",
+        "price": 108.16
+    },
+    {
+        "id": 99,
+        "name": "Mother",
+        "category": "Home & Kitchen",
+        "price": 663.19
+    },
+    {
+        "id": 100,
+        "name": "Would",
+        "category": "Home & Kitchen",
+        "price": 738.22
+    },
+    {
+        "id": 101,
+        "name": "Degree",
+        "category": "Home & Kitchen",
+        "price": 243.66
+    },
+    {
+        "id": 102,
+        "name": "Ten",
+        "category": "Clothing",
+        "price": 271.01
+    },
+    {
+        "id": 103,
+        "name": "Approach",
+        "category": "Home & Kitchen",
+        "price": 920.9
+    },
+    {
+        "id": 104,
+        "name": "Above",
+        "category": "Books",
+        "price": 500.79
+    },
+    {
+        "id": 105,
+        "name": "Big",
+        "category": "Clothing",
+        "price": 408.27
+    },
+    {
+        "id": 106,
+        "name": "Despite",
+        "category": "Electronics",
+        "price": 101.45
+    },
+    {
+        "id": 107,
+        "name": "One",
+        "category": "Clothing",
+        "price": 139.72
+    },
+    {
+        "id": 108,
+        "name": "Maybe",
+        "category": "Electronics",
+        "price": 941.73
+    },
+    {
+        "id": 109,
+        "name": "Individual",
+        "category": "Electronics",
+        "price": 764.31
+    },
+    {
+        "id": 110,
+        "name": "Trouble",
+        "category": "Clothing",
+        "price": 642.96
+    },
+    {
+        "id": 111,
+        "name": "Woman",
+        "category": "Electronics",
+        "price": 595.87
+    },
+    {
+        "id": 112,
+        "name": "Green",
+        "category": "Clothing",
+        "price": 94.91
+    },
+    {
+        "id": 113,
+        "name": "Home",
+        "category": "Home & Kitchen",
+        "price": 887.8
+    },
+    {
+        "id": 114,
+        "name": "Development",
+        "category": "Electronics",
+        "price": 619.57
+    },
+    {
+        "id": 115,
+        "name": "Face",
+        "category": "Books",
+        "price": 676.92
+    },
+    {
+        "id": 116,
+        "name": "Glass",
+        "category": "Books",
+        "price": 272.05
+    },
+    {
+        "id": 117,
+        "name": "Drug",
+        "category": "Home & Kitchen",
+        "price": 487.78
+    },
+    {
+        "id": 118,
+        "name": "Fly",
+        "category": "Clothing",
+        "price": 668.22
+    },
+    {
+        "id": 119,
+        "name": "Sing",
+        "category": "Clothing",
+        "price": 64.34
+    },
+    {
+        "id": 120,
+        "name": "Town",
+        "category": "Books",
+        "price": 993.69
+    },
+    {
+        "id": 121,
+        "name": "Both",
+        "category": "Electronics",
+        "price": 356.67
+    },
+    {
+        "id": 122,
+        "name": "Always",
+        "category": "Books",
+        "price": 457.23
+    },
+    {
+        "id": 123,
+        "name": "Attack",
+        "category": "Electronics",
+        "price": 528.52
+    },
+    {
+        "id": 124,
+        "name": "Avoid",
+        "category": "Books",
+        "price": 425.69
+    },
+    {
+        "id": 125,
+        "name": "Film",
+        "category": "Home & Kitchen",
+        "price": 848.55
+    },
+    {
+        "id": 126,
+        "name": "Teach",
+        "category": "Electronics",
+        "price": 817.12
+    },
+    {
+        "id": 127,
+        "name": "Laugh",
+        "category": "Electronics",
+        "price": 950.62
+    },
+    {
+        "id": 128,
+        "name": "Water",
+        "category": "Electronics",
+        "price": 410.4
+    },
+    {
+        "id": 129,
+        "name": "Quickly",
+        "category": "Electronics",
+        "price": 777.76
+    },
+    {
+        "id": 130,
+        "name": "Want",
+        "category": "Electronics",
+        "price": 623.49
+    },
+    {
+        "id": 131,
+        "name": "With",
+        "category": "Clothing",
+        "price": 528.61
+    },
+    {
+        "id": 132,
+        "name": "Less",
+        "category": "Clothing",
+        "price": 924.68
+    },
+    {
+        "id": 133,
+        "name": "Its",
+        "category": "Electronics",
+        "price": 699.58
+    },
+    {
+        "id": 134,
+        "name": "Lay",
+        "category": "Books",
+        "price": 715.41
+    },
+    {
+        "id": 135,
+        "name": "Whom",
+        "category": "Home & Kitchen",
+        "price": 389.22
+    },
+    {
+        "id": 136,
+        "name": "Trip",
+        "category": "Home & Kitchen",
+        "price": 764.21
+    },
+    {
+        "id": 137,
+        "name": "Station",
+        "category": "Electronics",
+        "price": 308.66
+    },
+    {
+        "id": 138,
+        "name": "Quality",
+        "category": "Books",
+        "price": 495.21
+    },
+    {
+        "id": 139,
+        "name": "Life",
+        "category": "Books",
+        "price": 225.55
+    },
+    {
+        "id": 140,
+        "name": "Ever",
+        "category": "Clothing",
+        "price": 242.55
+    },
+    {
+        "id": 141,
+        "name": "Significant",
+        "category": "Electronics",
+        "price": 781.79
+    },
+    {
+        "id": 142,
+        "name": "Series",
+        "category": "Home & Kitchen",
+        "price": 208.33
+    },
+    {
+        "id": 143,
+        "name": "Especially",
+        "category": "Clothing",
+        "price": 77.68
+    },
+    {
+        "id": 144,
+        "name": "Actually",
+        "category": "Clothing",
+        "price": 588.91
+    },
+    {
+        "id": 145,
+        "name": "System",
+        "category": "Electronics",
+        "price": 915.39
+    },
+    {
+        "id": 146,
+        "name": "Laugh",
+        "category": "Home & Kitchen",
+        "price": 181.58
+    },
+    {
+        "id": 147,
+        "name": "Guess",
+        "category": "Electronics",
+        "price": 456.05
+    },
+    {
+        "id": 148,
+        "name": "Bank",
+        "category": "Electronics",
+        "price": 365.7
+    },
+    {
+        "id": 149,
+        "name": "Relate",
+        "category": "Home & Kitchen",
+        "price": 697.78
+    },
+    {
+        "id": 150,
+        "name": "However",
+        "category": "Clothing",
+        "price": 591.4
+    },
+    {
+        "id": 151,
+        "name": "Society",
+        "category": "Clothing",
+        "price": 693.1
+    },
+    {
+        "id": 152,
+        "name": "Modern",
+        "category": "Home & Kitchen",
+        "price": 352.61
+    },
+    {
+        "id": 153,
+        "name": "Sense",
+        "category": "Home & Kitchen",
+        "price": 774.35
+    },
+    {
+        "id": 154,
+        "name": "Serve",
+        "category": "Clothing",
+        "price": 105.12
+    },
+    {
+        "id": 155,
+        "name": "Campaign",
+        "category": "Home & Kitchen",
+        "price": 956.4
+    },
+    {
+        "id": 156,
+        "name": "Do",
+        "category": "Electronics",
+        "price": 917.42
+    },
+    {
+        "id": 157,
+        "name": "Include",
+        "category": "Home & Kitchen",
+        "price": 10.74
+    },
+    {
+        "id": 158,
+        "name": "Trip",
+        "category": "Home & Kitchen",
+        "price": 124.72
+    },
+    {
+        "id": 159,
+        "name": "Get",
+        "category": "Clothing",
+        "price": 171.43
+    },
+    {
+        "id": 160,
+        "name": "Traditional",
+        "category": "Clothing",
+        "price": 68.33
+    },
+    {
+        "id": 161,
+        "name": "Other",
+        "category": "Books",
+        "price": 913.54
+    },
+    {
+        "id": 162,
+        "name": "Officer",
+        "category": "Home & Kitchen",
+        "price": 789.02
+    },
+    {
+        "id": 163,
+        "name": "Radio",
+        "category": "Books",
+        "price": 177.44
+    },
+    {
+        "id": 164,
+        "name": "Note",
+        "category": "Home & Kitchen",
+        "price": 440.87
+    },
+    {
+        "id": 165,
+        "name": "Program",
+        "category": "Clothing",
+        "price": 247.66
+    },
+    {
+        "id": 166,
+        "name": "Statement",
+        "category": "Electronics",
+        "price": 209.58
+    },
+    {
+        "id": 167,
+        "name": "Yard",
+        "category": "Electronics",
+        "price": 470.25
+    },
+    {
+        "id": 168,
+        "name": "After",
+        "category": "Books",
+        "price": 779.27
+    },
+    {
+        "id": 169,
+        "name": "Camera",
+        "category": "Home & Kitchen",
+        "price": 566.81
+    },
+    {
+        "id": 170,
+        "name": "Author",
+        "category": "Clothing",
+        "price": 938.95
+    },
+    {
+        "id": 171,
+        "name": "Office",
+        "category": "Home & Kitchen",
+        "price": 26.23
+    },
+    {
+        "id": 172,
+        "name": "Base",
+        "category": "Home & Kitchen",
+        "price": 586.56
+    },
+    {
+        "id": 173,
+        "name": "Space",
+        "category": "Home & Kitchen",
+        "price": 16.87
+    },
+    {
+        "id": 174,
+        "name": "Direction",
+        "category": "Home & Kitchen",
+        "price": 140.3
+    },
+    {
+        "id": 175,
+        "name": "Likely",
+        "category": "Clothing",
+        "price": 458.4
+    },
+    {
+        "id": 176,
+        "name": "Imagine",
+        "category": "Home & Kitchen",
+        "price": 598.8
+    },
+    {
+        "id": 177,
+        "name": "Stand",
+        "category": "Electronics",
+        "price": 238.8
+    },
+    {
+        "id": 178,
+        "name": "Perhaps",
+        "category": "Home & Kitchen",
+        "price": 557.79
+    },
+    {
+        "id": 179,
+        "name": "Its",
+        "category": "Books",
+        "price": 122.18
+    },
+    {
+        "id": 180,
+        "name": "Another",
+        "category": "Electronics",
+        "price": 910.62
+    },
+    {
+        "id": 181,
+        "name": "Assume",
+        "category": "Home & Kitchen",
+        "price": 929.19
+    },
+    {
+        "id": 182,
+        "name": "Our",
+        "category": "Electronics",
+        "price": 565.22
+    },
+    {
+        "id": 183,
+        "name": "Explain",
+        "category": "Electronics",
+        "price": 79.28
+    },
+    {
+        "id": 184,
+        "name": "Record",
+        "category": "Clothing",
+        "price": 578.09
+    },
+    {
+        "id": 185,
+        "name": "New",
+        "category": "Home & Kitchen",
+        "price": 801.91
+    },
+    {
+        "id": 186,
+        "name": "Stage",
+        "category": "Home & Kitchen",
+        "price": 828.39
+    },
+    {
+        "id": 187,
+        "name": "Themselves",
+        "category": "Clothing",
+        "price": 838.13
+    },
+    {
+        "id": 188,
+        "name": "Mind",
+        "category": "Books",
+        "price": 662.56
+    },
+    {
+        "id": 189,
+        "name": "If",
+        "category": "Home & Kitchen",
+        "price": 359.2
+    },
+    {
+        "id": 190,
+        "name": "Raise",
+        "category": "Books",
+        "price": 626.74
+    },
+    {
+        "id": 191,
+        "name": "Design",
+        "category": "Electronics",
+        "price": 457.21
+    },
+    {
+        "id": 192,
+        "name": "Wind",
+        "category": "Home & Kitchen",
+        "price": 473.17
+    },
+    {
+        "id": 193,
+        "name": "Story",
+        "category": "Books",
+        "price": 948.62
+    },
+    {
+        "id": 194,
+        "name": "Apply",
+        "category": "Books",
+        "price": 563.77
+    },
+    {
+        "id": 195,
+        "name": "Then",
+        "category": "Electronics",
+        "price": 683.82
+    },
+    {
+        "id": 196,
+        "name": "Understand",
+        "category": "Home & Kitchen",
+        "price": 496.26
+    },
+    {
+        "id": 197,
+        "name": "Opportunity",
+        "category": "Home & Kitchen",
+        "price": 114.25
+    },
+    {
+        "id": 198,
+        "name": "Nice",
+        "category": "Electronics",
+        "price": 388.81
+    },
+    {
+        "id": 199,
+        "name": "Feeling",
+        "category": "Books",
+        "price": 753.53
+    },
+    {
+        "id": 200,
+        "name": "Decide",
+        "category": "Electronics",
+        "price": 209.27
+    }
+]

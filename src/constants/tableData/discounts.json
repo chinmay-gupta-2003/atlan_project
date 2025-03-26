@@ -1,0 +1,1202 @@
+[
+    {
+        "id": 1,
+        "product_id": 124,
+        "discount_percent": 5,
+        "valid_until": "2025-03-01"
+    },
+    {
+        "id": 2,
+        "product_id": 71,
+        "discount_percent": 5,
+        "valid_until": "2025-02-10"
+    },
+    {
+        "id": 3,
+        "product_id": 100,
+        "discount_percent": 47,
+        "valid_until": "2025-03-20"
+    },
+    {
+        "id": 4,
+        "product_id": 37,
+        "discount_percent": 24,
+        "valid_until": "2025-01-08"
+    },
+    {
+        "id": 5,
+        "product_id": 108,
+        "discount_percent": 10,
+        "valid_until": "2025-02-10"
+    },
+    {
+        "id": 6,
+        "product_id": 56,
+        "discount_percent": 36,
+        "valid_until": "2025-02-23"
+    },
+    {
+        "id": 7,
+        "product_id": 145,
+        "discount_percent": 43,
+        "valid_until": "2025-01-31"
+    },
+    {
+        "id": 8,
+        "product_id": 28,
+        "discount_percent": 28,
+        "valid_until": "2025-02-16"
+    },
+    {
+        "id": 9,
+        "product_id": 138,
+        "discount_percent": 31,
+        "valid_until": "2025-01-16"
+    },
+    {
+        "id": 10,
+        "product_id": 147,
+        "discount_percent": 31,
+        "valid_until": "2025-02-25"
+    },
+    {
+        "id": 11,
+        "product_id": 116,
+        "discount_percent": 49,
+        "valid_until": "2025-03-02"
+    },
+    {
+        "id": 12,
+        "product_id": 138,
+        "discount_percent": 35,
+        "valid_until": "2025-02-10"
+    },
+    {
+        "id": 13,
+        "product_id": 7,
+        "discount_percent": 12,
+        "valid_until": "2025-01-03"
+    },
+    {
+        "id": 14,
+        "product_id": 129,
+        "discount_percent": 18,
+        "valid_until": "2025-01-24"
+    },
+    {
+        "id": 15,
+        "product_id": 76,
+        "discount_percent": 41,
+        "valid_until": "2025-03-13"
+    },
+    {
+        "id": 16,
+        "product_id": 89,
+        "discount_percent": 50,
+        "valid_until": "2025-03-22"
+    },
+    {
+        "id": 17,
+        "product_id": 133,
+        "discount_percent": 50,
+        "valid_until": "2025-01-31"
+    },
+    {
+        "id": 18,
+        "product_id": 5,
+        "discount_percent": 29,
+        "valid_until": "2025-01-25"
+    },
+    {
+        "id": 19,
+        "product_id": 93,
+        "discount_percent": 18,
+        "valid_until": "2025-01-06"
+    },
+    {
+        "id": 20,
+        "product_id": 97,
+        "discount_percent": 50,
+        "valid_until": "2025-01-22"
+    },
+    {
+        "id": 21,
+        "product_id": 176,
+        "discount_percent": 22,
+        "valid_until": "2025-01-07"
+    },
+    {
+        "id": 22,
+        "product_id": 92,
+        "discount_percent": 15,
+        "valid_until": "2025-02-06"
+    },
+    {
+        "id": 23,
+        "product_id": 146,
+        "discount_percent": 20,
+        "valid_until": "2025-01-24"
+    },
+    {
+        "id": 24,
+        "product_id": 59,
+        "discount_percent": 12,
+        "valid_until": "2025-03-20"
+    },
+    {
+        "id": 25,
+        "product_id": 99,
+        "discount_percent": 37,
+        "valid_until": "2025-01-05"
+    },
+    {
+        "id": 26,
+        "product_id": 3,
+        "discount_percent": 17,
+        "valid_until": "2025-01-01"
+    },
+    {
+        "id": 27,
+        "product_id": 33,
+        "discount_percent": 15,
+        "valid_until": "2025-01-08"
+    },
+    {
+        "id": 28,
+        "product_id": 62,
+        "discount_percent": 10,
+        "valid_until": "2025-03-11"
+    },
+    {
+        "id": 29,
+        "product_id": 186,
+        "discount_percent": 21,
+        "valid_until": "2025-03-25"
+    },
+    {
+        "id": 30,
+        "product_id": 1,
+        "discount_percent": 41,
+        "valid_until": "2025-03-19"
+    },
+    {
+        "id": 31,
+        "product_id": 60,
+        "discount_percent": 26,
+        "valid_until": "2025-03-05"
+    },
+    {
+        "id": 32,
+        "product_id": 195,
+        "discount_percent": 35,
+        "valid_until": "2025-02-01"
+    },
+    {
+        "id": 33,
+        "product_id": 165,
+        "discount_percent": 14,
+        "valid_until": "2025-02-01"
+    },
+    {
+        "id": 34,
+        "product_id": 145,
+        "discount_percent": 10,
+        "valid_until": "2025-01-06"
+    },
+    {
+        "id": 35,
+        "product_id": 45,
+        "discount_percent": 20,
+        "valid_until": "2025-02-21"
+    },
+    {
+        "id": 36,
+        "product_id": 101,
+        "discount_percent": 42,
+        "valid_until": "2025-01-27"
+    },
+    {
+        "id": 37,
+        "product_id": 95,
+        "discount_percent": 44,
+        "valid_until": "2025-01-08"
+    },
+    {
+        "id": 38,
+        "product_id": 108,
+        "discount_percent": 20,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 39,
+        "product_id": 163,
+        "discount_percent": 37,
+        "valid_until": "2025-02-14"
+    },
+    {
+        "id": 40,
+        "product_id": 198,
+        "discount_percent": 48,
+        "valid_until": "2025-03-12"
+    },
+    {
+        "id": 41,
+        "product_id": 62,
+        "discount_percent": 38,
+        "valid_until": "2025-01-23"
+    },
+    {
+        "id": 42,
+        "product_id": 9,
+        "discount_percent": 41,
+        "valid_until": "2025-02-02"
+    },
+    {
+        "id": 43,
+        "product_id": 133,
+        "discount_percent": 39,
+        "valid_until": "2025-01-17"
+    },
+    {
+        "id": 44,
+        "product_id": 75,
+        "discount_percent": 5,
+        "valid_until": "2025-01-21"
+    },
+    {
+        "id": 45,
+        "product_id": 89,
+        "discount_percent": 26,
+        "valid_until": "2025-01-08"
+    },
+    {
+        "id": 46,
+        "product_id": 106,
+        "discount_percent": 8,
+        "valid_until": "2025-03-11"
+    },
+    {
+        "id": 47,
+        "product_id": 178,
+        "discount_percent": 31,
+        "valid_until": "2025-03-01"
+    },
+    {
+        "id": 48,
+        "product_id": 186,
+        "discount_percent": 17,
+        "valid_until": "2025-02-27"
+    },
+    {
+        "id": 49,
+        "product_id": 9,
+        "discount_percent": 30,
+        "valid_until": "2025-02-28"
+    },
+    {
+        "id": 50,
+        "product_id": 1,
+        "discount_percent": 41,
+        "valid_until": "2025-01-22"
+    },
+    {
+        "id": 51,
+        "product_id": 92,
+        "discount_percent": 9,
+        "valid_until": "2025-01-09"
+    },
+    {
+        "id": 52,
+        "product_id": 42,
+        "discount_percent": 38,
+        "valid_until": "2025-03-08"
+    },
+    {
+        "id": 53,
+        "product_id": 19,
+        "discount_percent": 31,
+        "valid_until": "2025-03-13"
+    },
+    {
+        "id": 54,
+        "product_id": 114,
+        "discount_percent": 46,
+        "valid_until": "2025-01-29"
+    },
+    {
+        "id": 55,
+        "product_id": 67,
+        "discount_percent": 9,
+        "valid_until": "2025-01-10"
+    },
+    {
+        "id": 56,
+        "product_id": 32,
+        "discount_percent": 21,
+        "valid_until": "2025-03-09"
+    },
+    {
+        "id": 57,
+        "product_id": 31,
+        "discount_percent": 15,
+        "valid_until": "2025-03-01"
+    },
+    {
+        "id": 58,
+        "product_id": 96,
+        "discount_percent": 50,
+        "valid_until": "2025-03-05"
+    },
+    {
+        "id": 59,
+        "product_id": 107,
+        "discount_percent": 48,
+        "valid_until": "2025-01-13"
+    },
+    {
+        "id": 60,
+        "product_id": 37,
+        "discount_percent": 35,
+        "valid_until": "2025-02-18"
+    },
+    {
+        "id": 61,
+        "product_id": 133,
+        "discount_percent": 11,
+        "valid_until": "2025-02-01"
+    },
+    {
+        "id": 62,
+        "product_id": 1,
+        "discount_percent": 39,
+        "valid_until": "2025-01-13"
+    },
+    {
+        "id": 63,
+        "product_id": 133,
+        "discount_percent": 15,
+        "valid_until": "2025-03-19"
+    },
+    {
+        "id": 64,
+        "product_id": 139,
+        "discount_percent": 11,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 65,
+        "product_id": 17,
+        "discount_percent": 43,
+        "valid_until": "2025-02-07"
+    },
+    {
+        "id": 66,
+        "product_id": 57,
+        "discount_percent": 30,
+        "valid_until": "2025-01-21"
+    },
+    {
+        "id": 67,
+        "product_id": 42,
+        "discount_percent": 23,
+        "valid_until": "2025-03-20"
+    },
+    {
+        "id": 68,
+        "product_id": 25,
+        "discount_percent": 44,
+        "valid_until": "2025-03-04"
+    },
+    {
+        "id": 69,
+        "product_id": 164,
+        "discount_percent": 25,
+        "valid_until": "2025-02-05"
+    },
+    {
+        "id": 70,
+        "product_id": 116,
+        "discount_percent": 17,
+        "valid_until": "2025-01-05"
+    },
+    {
+        "id": 71,
+        "product_id": 161,
+        "discount_percent": 12,
+        "valid_until": "2025-03-11"
+    },
+    {
+        "id": 72,
+        "product_id": 17,
+        "discount_percent": 13,
+        "valid_until": "2025-03-02"
+    },
+    {
+        "id": 73,
+        "product_id": 100,
+        "discount_percent": 31,
+        "valid_until": "2025-02-01"
+    },
+    {
+        "id": 74,
+        "product_id": 53,
+        "discount_percent": 41,
+        "valid_until": "2025-01-18"
+    },
+    {
+        "id": 75,
+        "product_id": 102,
+        "discount_percent": 25,
+        "valid_until": "2025-03-25"
+    },
+    {
+        "id": 76,
+        "product_id": 1,
+        "discount_percent": 39,
+        "valid_until": "2025-01-03"
+    },
+    {
+        "id": 77,
+        "product_id": 187,
+        "discount_percent": 42,
+        "valid_until": "2025-03-19"
+    },
+    {
+        "id": 78,
+        "product_id": 81,
+        "discount_percent": 5,
+        "valid_until": "2025-01-10"
+    },
+    {
+        "id": 79,
+        "product_id": 66,
+        "discount_percent": 7,
+        "valid_until": "2025-03-23"
+    },
+    {
+        "id": 80,
+        "product_id": 120,
+        "discount_percent": 46,
+        "valid_until": "2025-01-19"
+    },
+    {
+        "id": 81,
+        "product_id": 10,
+        "discount_percent": 42,
+        "valid_until": "2025-02-13"
+    },
+    {
+        "id": 82,
+        "product_id": 45,
+        "discount_percent": 49,
+        "valid_until": "2025-01-18"
+    },
+    {
+        "id": 83,
+        "product_id": 6,
+        "discount_percent": 45,
+        "valid_until": "2025-02-02"
+    },
+    {
+        "id": 84,
+        "product_id": 198,
+        "discount_percent": 26,
+        "valid_until": "2025-01-01"
+    },
+    {
+        "id": 85,
+        "product_id": 1,
+        "discount_percent": 40,
+        "valid_until": "2025-01-04"
+    },
+    {
+        "id": 86,
+        "product_id": 145,
+        "discount_percent": 44,
+        "valid_until": "2025-02-02"
+    },
+    {
+        "id": 87,
+        "product_id": 18,
+        "discount_percent": 29,
+        "valid_until": "2025-02-13"
+    },
+    {
+        "id": 88,
+        "product_id": 5,
+        "discount_percent": 30,
+        "valid_until": "2025-02-14"
+    },
+    {
+        "id": 89,
+        "product_id": 55,
+        "discount_percent": 18,
+        "valid_until": "2025-01-29"
+    },
+    {
+        "id": 90,
+        "product_id": 34,
+        "discount_percent": 47,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 91,
+        "product_id": 9,
+        "discount_percent": 47,
+        "valid_until": "2025-03-18"
+    },
+    {
+        "id": 92,
+        "product_id": 185,
+        "discount_percent": 11,
+        "valid_until": "2025-01-27"
+    },
+    {
+        "id": 93,
+        "product_id": 115,
+        "discount_percent": 46,
+        "valid_until": "2025-01-29"
+    },
+    {
+        "id": 94,
+        "product_id": 197,
+        "discount_percent": 12,
+        "valid_until": "2025-02-09"
+    },
+    {
+        "id": 95,
+        "product_id": 55,
+        "discount_percent": 31,
+        "valid_until": "2025-01-19"
+    },
+    {
+        "id": 96,
+        "product_id": 184,
+        "discount_percent": 14,
+        "valid_until": "2025-03-22"
+    },
+    {
+        "id": 97,
+        "product_id": 102,
+        "discount_percent": 11,
+        "valid_until": "2025-01-30"
+    },
+    {
+        "id": 98,
+        "product_id": 162,
+        "discount_percent": 46,
+        "valid_until": "2025-02-06"
+    },
+    {
+        "id": 99,
+        "product_id": 71,
+        "discount_percent": 39,
+        "valid_until": "2025-02-24"
+    },
+    {
+        "id": 100,
+        "product_id": 71,
+        "discount_percent": 41,
+        "valid_until": "2025-03-20"
+    },
+    {
+        "id": 101,
+        "product_id": 65,
+        "discount_percent": 17,
+        "valid_until": "2025-03-06"
+    },
+    {
+        "id": 102,
+        "product_id": 87,
+        "discount_percent": 42,
+        "valid_until": "2025-01-03"
+    },
+    {
+        "id": 103,
+        "product_id": 57,
+        "discount_percent": 8,
+        "valid_until": "2025-03-13"
+    },
+    {
+        "id": 104,
+        "product_id": 96,
+        "discount_percent": 16,
+        "valid_until": "2025-02-10"
+    },
+    {
+        "id": 105,
+        "product_id": 14,
+        "discount_percent": 45,
+        "valid_until": "2025-02-15"
+    },
+    {
+        "id": 106,
+        "product_id": 175,
+        "discount_percent": 37,
+        "valid_until": "2025-01-10"
+    },
+    {
+        "id": 107,
+        "product_id": 150,
+        "discount_percent": 39,
+        "valid_until": "2025-01-09"
+    },
+    {
+        "id": 108,
+        "product_id": 188,
+        "discount_percent": 35,
+        "valid_until": "2025-03-07"
+    },
+    {
+        "id": 109,
+        "product_id": 168,
+        "discount_percent": 45,
+        "valid_until": "2025-01-20"
+    },
+    {
+        "id": 110,
+        "product_id": 115,
+        "discount_percent": 32,
+        "valid_until": "2025-02-05"
+    },
+    {
+        "id": 111,
+        "product_id": 107,
+        "discount_percent": 5,
+        "valid_until": "2025-01-14"
+    },
+    {
+        "id": 112,
+        "product_id": 8,
+        "discount_percent": 35,
+        "valid_until": "2025-02-05"
+    },
+    {
+        "id": 113,
+        "product_id": 71,
+        "discount_percent": 25,
+        "valid_until": "2025-01-09"
+    },
+    {
+        "id": 114,
+        "product_id": 138,
+        "discount_percent": 23,
+        "valid_until": "2025-02-06"
+    },
+    {
+        "id": 115,
+        "product_id": 11,
+        "discount_percent": 14,
+        "valid_until": "2025-02-28"
+    },
+    {
+        "id": 116,
+        "product_id": 178,
+        "discount_percent": 29,
+        "valid_until": "2025-01-02"
+    },
+    {
+        "id": 117,
+        "product_id": 40,
+        "discount_percent": 37,
+        "valid_until": "2025-01-29"
+    },
+    {
+        "id": 118,
+        "product_id": 108,
+        "discount_percent": 26,
+        "valid_until": "2025-03-22"
+    },
+    {
+        "id": 119,
+        "product_id": 184,
+        "discount_percent": 20,
+        "valid_until": "2025-01-01"
+    },
+    {
+        "id": 120,
+        "product_id": 76,
+        "discount_percent": 50,
+        "valid_until": "2025-03-01"
+    },
+    {
+        "id": 121,
+        "product_id": 147,
+        "discount_percent": 46,
+        "valid_until": "2025-01-12"
+    },
+    {
+        "id": 122,
+        "product_id": 157,
+        "discount_percent": 22,
+        "valid_until": "2025-02-23"
+    },
+    {
+        "id": 123,
+        "product_id": 72,
+        "discount_percent": 45,
+        "valid_until": "2025-03-24"
+    },
+    {
+        "id": 124,
+        "product_id": 95,
+        "discount_percent": 23,
+        "valid_until": "2025-02-19"
+    },
+    {
+        "id": 125,
+        "product_id": 59,
+        "discount_percent": 46,
+        "valid_until": "2025-02-20"
+    },
+    {
+        "id": 126,
+        "product_id": 5,
+        "discount_percent": 19,
+        "valid_until": "2025-02-16"
+    },
+    {
+        "id": 127,
+        "product_id": 73,
+        "discount_percent": 45,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 128,
+        "product_id": 4,
+        "discount_percent": 46,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 129,
+        "product_id": 67,
+        "discount_percent": 34,
+        "valid_until": "2025-03-09"
+    },
+    {
+        "id": 130,
+        "product_id": 86,
+        "discount_percent": 6,
+        "valid_until": "2025-01-12"
+    },
+    {
+        "id": 131,
+        "product_id": 171,
+        "discount_percent": 25,
+        "valid_until": "2025-03-14"
+    },
+    {
+        "id": 132,
+        "product_id": 122,
+        "discount_percent": 17,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 133,
+        "product_id": 128,
+        "discount_percent": 24,
+        "valid_until": "2025-03-05"
+    },
+    {
+        "id": 134,
+        "product_id": 45,
+        "discount_percent": 28,
+        "valid_until": "2025-03-10"
+    },
+    {
+        "id": 135,
+        "product_id": 114,
+        "discount_percent": 32,
+        "valid_until": "2025-01-24"
+    },
+    {
+        "id": 136,
+        "product_id": 62,
+        "discount_percent": 47,
+        "valid_until": "2025-02-15"
+    },
+    {
+        "id": 137,
+        "product_id": 134,
+        "discount_percent": 6,
+        "valid_until": "2025-03-10"
+    },
+    {
+        "id": 138,
+        "product_id": 160,
+        "discount_percent": 47,
+        "valid_until": "2025-02-22"
+    },
+    {
+        "id": 139,
+        "product_id": 52,
+        "discount_percent": 12,
+        "valid_until": "2025-03-18"
+    },
+    {
+        "id": 140,
+        "product_id": 192,
+        "discount_percent": 11,
+        "valid_until": "2025-03-13"
+    },
+    {
+        "id": 141,
+        "product_id": 107,
+        "discount_percent": 9,
+        "valid_until": "2025-03-18"
+    },
+    {
+        "id": 142,
+        "product_id": 75,
+        "discount_percent": 42,
+        "valid_until": "2025-03-21"
+    },
+    {
+        "id": 143,
+        "product_id": 65,
+        "discount_percent": 26,
+        "valid_until": "2025-02-23"
+    },
+    {
+        "id": 144,
+        "product_id": 115,
+        "discount_percent": 44,
+        "valid_until": "2025-03-03"
+    },
+    {
+        "id": 145,
+        "product_id": 148,
+        "discount_percent": 5,
+        "valid_until": "2025-01-21"
+    },
+    {
+        "id": 146,
+        "product_id": 53,
+        "discount_percent": 27,
+        "valid_until": "2025-02-20"
+    },
+    {
+        "id": 147,
+        "product_id": 171,
+        "discount_percent": 35,
+        "valid_until": "2025-02-02"
+    },
+    {
+        "id": 148,
+        "product_id": 27,
+        "discount_percent": 43,
+        "valid_until": "2025-02-26"
+    },
+    {
+        "id": 149,
+        "product_id": 177,
+        "discount_percent": 11,
+        "valid_until": "2025-02-13"
+    },
+    {
+        "id": 150,
+        "product_id": 179,
+        "discount_percent": 27,
+        "valid_until": "2025-03-24"
+    },
+    {
+        "id": 151,
+        "product_id": 163,
+        "discount_percent": 24,
+        "valid_until": "2025-01-29"
+    },
+    {
+        "id": 152,
+        "product_id": 36,
+        "discount_percent": 44,
+        "valid_until": "2025-01-10"
+    },
+    {
+        "id": 153,
+        "product_id": 76,
+        "discount_percent": 5,
+        "valid_until": "2025-01-28"
+    },
+    {
+        "id": 154,
+        "product_id": 8,
+        "discount_percent": 10,
+        "valid_until": "2025-02-10"
+    },
+    {
+        "id": 155,
+        "product_id": 104,
+        "discount_percent": 50,
+        "valid_until": "2025-02-03"
+    },
+    {
+        "id": 156,
+        "product_id": 200,
+        "discount_percent": 27,
+        "valid_until": "2025-01-20"
+    },
+    {
+        "id": 157,
+        "product_id": 148,
+        "discount_percent": 31,
+        "valid_until": "2025-01-30"
+    },
+    {
+        "id": 158,
+        "product_id": 168,
+        "discount_percent": 23,
+        "valid_until": "2025-01-04"
+    },
+    {
+        "id": 159,
+        "product_id": 187,
+        "discount_percent": 17,
+        "valid_until": "2025-01-03"
+    },
+    {
+        "id": 160,
+        "product_id": 185,
+        "discount_percent": 36,
+        "valid_until": "2025-01-10"
+    },
+    {
+        "id": 161,
+        "product_id": 145,
+        "discount_percent": 11,
+        "valid_until": "2025-03-16"
+    },
+    {
+        "id": 162,
+        "product_id": 70,
+        "discount_percent": 18,
+        "valid_until": "2025-02-08"
+    },
+    {
+        "id": 163,
+        "product_id": 105,
+        "discount_percent": 38,
+        "valid_until": "2025-01-26"
+    },
+    {
+        "id": 164,
+        "product_id": 159,
+        "discount_percent": 42,
+        "valid_until": "2025-03-07"
+    },
+    {
+        "id": 165,
+        "product_id": 115,
+        "discount_percent": 43,
+        "valid_until": "2025-02-02"
+    },
+    {
+        "id": 166,
+        "product_id": 8,
+        "discount_percent": 26,
+        "valid_until": "2025-02-06"
+    },
+    {
+        "id": 167,
+        "product_id": 12,
+        "discount_percent": 41,
+        "valid_until": "2025-03-04"
+    },
+    {
+        "id": 168,
+        "product_id": 93,
+        "discount_percent": 25,
+        "valid_until": "2025-02-08"
+    },
+    {
+        "id": 169,
+        "product_id": 58,
+        "discount_percent": 7,
+        "valid_until": "2025-02-03"
+    },
+    {
+        "id": 170,
+        "product_id": 189,
+        "discount_percent": 44,
+        "valid_until": "2025-01-31"
+    },
+    {
+        "id": 171,
+        "product_id": 40,
+        "discount_percent": 19,
+        "valid_until": "2025-01-10"
+    },
+    {
+        "id": 172,
+        "product_id": 3,
+        "discount_percent": 29,
+        "valid_until": "2025-03-09"
+    },
+    {
+        "id": 173,
+        "product_id": 193,
+        "discount_percent": 47,
+        "valid_until": "2025-02-17"
+    },
+    {
+        "id": 174,
+        "product_id": 53,
+        "discount_percent": 39,
+        "valid_until": "2025-01-09"
+    },
+    {
+        "id": 175,
+        "product_id": 200,
+        "discount_percent": 48,
+        "valid_until": "2025-02-22"
+    },
+    {
+        "id": 176,
+        "product_id": 92,
+        "discount_percent": 27,
+        "valid_until": "2025-02-20"
+    },
+    {
+        "id": 177,
+        "product_id": 154,
+        "discount_percent": 12,
+        "valid_until": "2025-03-17"
+    },
+    {
+        "id": 178,
+        "product_id": 150,
+        "discount_percent": 47,
+        "valid_until": "2025-03-08"
+    },
+    {
+        "id": 179,
+        "product_id": 138,
+        "discount_percent": 22,
+        "valid_until": "2025-03-14"
+    },
+    {
+        "id": 180,
+        "product_id": 33,
+        "discount_percent": 9,
+        "valid_until": "2025-01-01"
+    },
+    {
+        "id": 181,
+        "product_id": 99,
+        "discount_percent": 6,
+        "valid_until": "2025-03-21"
+    },
+    {
+        "id": 182,
+        "product_id": 78,
+        "discount_percent": 47,
+        "valid_until": "2025-01-30"
+    },
+    {
+        "id": 183,
+        "product_id": 188,
+        "discount_percent": 18,
+        "valid_until": "2025-02-13"
+    },
+    {
+        "id": 184,
+        "product_id": 63,
+        "discount_percent": 39,
+        "valid_until": "2025-01-04"
+    },
+    {
+        "id": 185,
+        "product_id": 91,
+        "discount_percent": 33,
+        "valid_until": "2025-01-19"
+    },
+    {
+        "id": 186,
+        "product_id": 5,
+        "discount_percent": 12,
+        "valid_until": "2025-03-08"
+    },
+    {
+        "id": 187,
+        "product_id": 184,
+        "discount_percent": 14,
+        "valid_until": "2025-03-21"
+    },
+    {
+        "id": 188,
+        "product_id": 9,
+        "discount_percent": 21,
+        "valid_until": "2025-03-14"
+    },
+    {
+        "id": 189,
+        "product_id": 153,
+        "discount_percent": 9,
+        "valid_until": "2025-02-10"
+    },
+    {
+        "id": 190,
+        "product_id": 62,
+        "discount_percent": 41,
+        "valid_until": "2025-02-08"
+    },
+    {
+        "id": 191,
+        "product_id": 79,
+        "discount_percent": 47,
+        "valid_until": "2025-02-07"
+    },
+    {
+        "id": 192,
+        "product_id": 72,
+        "discount_percent": 18,
+        "valid_until": "2025-01-11"
+    },
+    {
+        "id": 193,
+        "product_id": 156,
+        "discount_percent": 5,
+        "valid_until": "2025-01-22"
+    },
+    {
+        "id": 194,
+        "product_id": 10,
+        "discount_percent": 49,
+        "valid_until": "2025-03-07"
+    },
+    {
+        "id": 195,
+        "product_id": 38,
+        "discount_percent": 7,
+        "valid_until": "2025-03-25"
+    },
+    {
+        "id": 196,
+        "product_id": 145,
+        "discount_percent": 5,
+        "valid_until": "2025-02-23"
+    },
+    {
+        "id": 197,
+        "product_id": 3,
+        "discount_percent": 25,
+        "valid_until": "2025-01-11"
+    },
+    {
+        "id": 198,
+        "product_id": 97,
+        "discount_percent": 19,
+        "valid_until": "2025-01-12"
+    },
+    {
+        "id": 199,
+        "product_id": 84,
+        "discount_percent": 34,
+        "valid_until": "2025-02-04"
+    },
+    {
+        "id": 200,
+        "product_id": 161,
+        "discount_percent": 23,
+        "valid_until": "2025-01-27"
+    }
+]

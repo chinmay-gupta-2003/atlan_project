@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 2,
+        "category_name": "Books"
+    },
+    {
+        "id": 3,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 4,
+        "category_name": "Books"
+    },
+    {
+        "id": 5,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 6,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 7,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 8,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 9,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 10,
+        "category_name": "Books"
+    },
+    {
+        "id": 11,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 12,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 13,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 14,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 15,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 16,
+        "category_name": "Books"
+    },
+    {
+        "id": 17,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 18,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 19,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 20,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 21,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 22,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 23,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 24,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 25,
+        "category_name": "Books"
+    },
+    {
+        "id": 26,
+        "category_name": "Books"
+    },
+    {
+        "id": 27,
+        "category_name": "Books"
+    },
+    {
+        "id": 28,
+        "category_name": "Books"
+    },
+    {
+        "id": 29,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 30,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 31,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 32,
+        "category_name": "Books"
+    },
+    {
+        "id": 33,
+        "category_name": "Books"
+    },
+    {
+        "id": 34,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 35,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 36,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 37,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 38,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 39,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 40,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 41,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 42,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 43,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 44,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 45,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 46,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 47,
+        "category_name": "Books"
+    },
+    {
+        "id": 48,
+        "category_name": "Books"
+    },
+    {
+        "id": 49,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 50,
+        "category_name": "Books"
+    },
+    {
+        "id": 51,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 52,
+        "category_name": "Books"
+    },
+    {
+        "id": 53,
+        "category_name": "Books"
+    },
+    {
+        "id": 54,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 55,
+        "category_name": "Books"
+    },
+    {
+        "id": 56,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 57,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 58,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 59,
+        "category_name": "Books"
+    },
+    {
+        "id": 60,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 61,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 62,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 63,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 64,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 65,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 66,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 67,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 68,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 69,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 70,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 71,
+        "category_name": "Books"
+    },
+    {
+        "id": 72,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 73,
+        "category_name": "Books"
+    },
+    {
+        "id": 74,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 75,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 76,
+        "category_name": "Books"
+    },
+    {
+        "id": 77,
+        "category_name": "Books"
+    },
+    {
+        "id": 78,
+        "category_name": "Books"
+    },
+    {
+        "id": 79,
+        "category_name": "Books"
+    },
+    {
+        "id": 80,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 81,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 82,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 83,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 84,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 85,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 86,
+        "category_name": "Books"
+    },
+    {
+        "id": 87,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 88,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 89,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 90,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 91,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 92,
+        "category_name": "Books"
+    },
+    {
+        "id": 93,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 94,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 95,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 96,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 97,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 98,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 99,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 100,
+        "category_name": "Books"
+    },
+    {
+        "id": 101,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 102,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 103,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 104,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 105,
+        "category_name": "Books"
+    },
+    {
+        "id": 106,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 107,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 108,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 109,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 110,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 111,
+        "category_name": "Books"
+    },
+    {
+        "id": 112,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 113,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 114,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 115,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 116,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 117,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 118,
+        "category_name": "Books"
+    },
+    {
+        "id": 119,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 120,
+        "category_name": "Books"
+    },
+    {
+        "id": 121,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 122,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 123,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 124,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 125,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 126,
+        "category_name": "Books"
+    },
+    {
+        "id": 127,
+        "category_name": "Books"
+    },
+    {
+        "id": 128,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 129,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 130,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 131,
+        "category_name": "Books"
+    },
+    {
+        "id": 132,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 133,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 134,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 135,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 136,
+        "category_name": "Books"
+    },
+    {
+        "id": 137,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 138,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 139,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 140,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 141,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 142,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 143,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 144,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 145,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 146,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 147,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 148,
+        "category_name": "Books"
+    },
+    {
+        "id": 149,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 150,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 151,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 152,
+        "category_name": "Books"
+    },
+    {
+        "id": 153,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 154,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 155,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 156,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 157,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 158,
+        "category_name": "Books"
+    },
+    {
+        "id": 159,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 160,
+        "category_name": "Books"
+    },
+    {
+        "id": 161,
+        "category_name": "Books"
+    },
+    {
+        "id": 162,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 163,
+        "category_name": "Books"
+    },
+    {
+        "id": 164,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 165,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 166,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 167,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 168,
+        "category_name": "Books"
+    },
+    {
+        "id": 169,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 170,
+        "category_name": "Books"
+    },
+    {
+        "id": 171,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 172,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 173,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 174,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 175,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 176,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 177,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 178,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 179,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 180,
+        "category_name": "Books"
+    },
+    {
+        "id": 181,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 182,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 183,
+        "category_name": "Home & Kitchen"
+    },
+    {
+        "id": 184,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 185,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 186,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 187,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 188,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 189,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 190,
+        "category_name": "Books"
+    },
+    {
+        "id": 191,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 192,
+        "category_name": "Books"
+    },
+    {
+        "id": 193,
+        "category_name": "Clothing"
+    },
+    {
+        "id": 194,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 195,
+        "category_name": "Books"
+    },
+    {
+        "id": 196,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 197,
+        "category_name": "Books"
+    },
+    {
+        "id": 198,
+        "category_name": "Electronics"
+    },
+    {
+        "id": 199,
+        "category_name": "Books"
+    },
+    {
+        "id": 200,
+        "category_name": "Electronics"
+    }
+]
