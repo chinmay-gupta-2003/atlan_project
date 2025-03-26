@@ -27,7 +27,7 @@ const Router = () => {
           />
         ))}
       </Route>
-      <Route path="*" element={<div>Page not found</div>} />
+      <Route path="*" element={<NotFound404 />} />
     </Routes>
   );
 };
