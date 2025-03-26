@@ -1,0 +1,19 @@
+.container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--primary-black);
+}
+
+.image {
+  height: 30rem;
+}

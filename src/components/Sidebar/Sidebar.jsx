@@ -55,7 +55,10 @@ function Sidebar() {
                 className={`${styles.databaseLink} ${
                   databaseSelected.id === database.id ? styles.active : ""
                 }`}
-                onClick={() => dispatch(setDatabaseSelected(database))}
+                onClick={() => {
+                  dispatch(setDatabaseSelected(database));
+                  dispatch(setTableSelected({ id: "", name: "" }));
+                }}
               >
                 <p>{database.name}</p>
               </div>
