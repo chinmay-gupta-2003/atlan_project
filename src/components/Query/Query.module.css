@@ -98,3 +98,8 @@
   gap: 1rem;
   min-width: 48rem;
 }
+
+.recordIcon {
+  color: var(--primary-red);
+  cursor: pointer;
+}

@@ -11,44 +11,61 @@ import styles from "components/Query/Query.module.css";
 import { startRecording, stopRecording } from "utils/speechRecognition";
 
 function GenerateQueryModal({
+  onClick,
+  setFindQuery,
   openModalGenerate,
   setOpenModalGenerate,
-  generateQuery,
-  setGenerateQuery,
-  handleKeyDownGenerate,
 }) {
-  const [generateActive, setGenerateActive] = useState(false);
+  const [query, setQuery] = useState("");
+
+  const [active, setActive] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
 
+  const onClickHandler = () => {
+    setFindQuery(query);
+    onClick(query);
+    setOpenModalGenerate(false);
+    setQuery("");
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      onClickHandler();
+    }
+  };
+
   return (
-    <Modal open={openModalGenerate} setOpen={setOpenModalGenerate}>
+    <Modal
+      open={openModalGenerate}
+      setOpen={() => {
+        setOpenModalGenerate(false);
+      }}
+    >
       <div className={styles.generateInputContainer}>
-        <div
-          className={`${styles.input} ${generateActive ? styles.active : ""}`}
-        >
+        <div className={`${styles.input} ${active ? styles.active : ""}`}>
           <SparklesIcon height={18} className={styles.queryIcon} />
           <input
             type="text"
             placeholder="Type a query, or use microphone"
-            value={generateQuery}
-            onChange={(e) => setGenerateQuery(e.target.value)}
-            onKeyDown={handleKeyDownGenerate}
-            onFocus={() => setGenerateActive(true)}
-            onBlur={() => setGenerateActive(false)}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+            onFocus={() => setActive(true)}
+            onBlur={() => setActive(false)}
           />
           <MicrophoneIcon
             height={18}
-            className={styles.queryIcon}
+            className={`${isRecording ? styles.recordIcon : styles.queryIcon}`}
             onClick={() => {
-              if (!isRecording)
-                startRecording(setIsRecording, setGenerateQuery);
+              if (!isRecording) startRecording(setIsRecording, setQuery);
               else stopRecording(setIsRecording);
             }}
           />
         </div>
         <button
           className={`${styles.btn} ${styles.btnGradient}`}
-          onClick={handleKeyDownGenerate}
+          onClick={onClickHandler}
         >
           <span>Send</span>
           <PaperAirplaneIcon height={16} />

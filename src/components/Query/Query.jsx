@@ -26,14 +26,15 @@ function Query({ onQueryExecute }) {
 
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(false);
-  const [generateQuery, setGenerateQuery] = useState("");
   const [openModal, setOpenModal] = useState(false);
   const [openModalGenerate, setOpenModalGenerate] = useState(false);
 
-  const handleFindClick = () => {
-    if (!query) return toast.error("Please type a query");
+  const handleFindClick = (queryText) => {
+    if (!queryText) return toast.error("Please type a query");
 
-    dispatch(addQueryToHistory({ time: formatDate(new Date()), query }));
+    dispatch(
+      addQueryToHistory({ time: formatDate(new Date()), query: queryText })
+    );
 
     if (!databaseSelected.id) {
       const randomDatabase =
@@ -54,12 +55,9 @@ function Query({ onQueryExecute }) {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") handleFindClick();
-  };
-
-  const handleKeyDownGenerate = (e) => {
     if (e.key === "Enter") {
-      console.log("Sending query:", generateQuery);
+      e.preventDefault();
+      handleFindClick(query);
     }
   };
 
@@ -82,7 +80,11 @@ function Query({ onQueryExecute }) {
         />
       </div>
 
-      <button className={styles.btn} onClick={handleFindClick} type="submit">
+      <button
+        className={styles.btn}
+        onClick={() => handleFindClick(query)}
+        type="submit"
+      >
         <span>Execute</span>
         <BoltIcon height={16} />
       </button>
@@ -99,12 +101,12 @@ function Query({ onQueryExecute }) {
         setOpenModal={setOpenModal}
         setQuery={setQuery}
       />
+
       <GenerateQueryModal
-        generateQuery={generateQuery}
-        setGenerateQuery={setGenerateQuery}
+        onClick={handleFindClick}
         openModalGenerate={openModalGenerate}
         setOpenModalGenerate={setOpenModalGenerate}
-        handleKeyDownGenerate={handleKeyDownGenerate}
+        setFindQuery={setQuery}
       />
     </div>
   );
