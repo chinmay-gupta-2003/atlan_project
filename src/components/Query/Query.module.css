@@ -19,6 +19,7 @@
 
 .queryIcon {
   color: var(--primary-teal);
+  cursor: pointer;
 }
 
 .active {
@@ -63,4 +64,30 @@
 
 .btnGradient:hover {
   opacity: 0.9;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modalQuery {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--primary-teal);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.date {
+  font-weight: 500;
+  color: var(--primary-teal);
+}
+
+.copyIcon {
+  color: var(--primary-teal);
+  margin-left: auto;
 }
