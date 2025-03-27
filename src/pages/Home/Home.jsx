@@ -20,6 +20,12 @@ import SimpleLineChart from "components/Charts/LineCharts/SimpleLineChart";
 import TinyLineChart from "components/Charts/LineCharts/TinyLineChart";
 import DashedLineChart from "components/Charts/LineCharts/DashedLineChart";
 import BiaxialLineChart from "components/Charts/LineCharts/BiaxialLineChart";
+import SimplePieChart from "components/Charts/PieCharts/SimplePieChart";
+import StraightAnglePieChart from "components/Charts/PieCharts/StraightAnglePieChart";
+import TwoLevelPieChart from "components/Charts/PieCharts/TwoLevelPieChart";
+import PieChartWithCustomizedLabel from "components/Charts/PieCharts/PieChartWithCustomizedLabel";
+import SimpleScatterChart from "components/Charts/Scatter/SimpleScatterChart";
+import MultipleYAxesScatterChart from "components/Charts/Scatter/MultipleYAxesScatterChart";
 
 function Home() {
   const { tableSelected, databaseSelected } = useSelector(
@@ -98,6 +104,36 @@ function Home() {
     },
   ];
 
+  const pieCharts = [
+    {
+      title: "Simple Pie Chart",
+      component: <SimplePieChart />,
+    },
+    {
+      title: "Straight Angle Pie Chart",
+      component: <StraightAnglePieChart />,
+    },
+    {
+      title: "Two Level Pie Chart",
+      component: <TwoLevelPieChart />,
+    },
+    {
+      title: "Pie Chart With Customized Label",
+      component: <PieChartWithCustomizedLabel />,
+    },
+  ];
+
+  const scatterChart = [
+    {
+      title: "Simple Scatter Chart",
+      component: <SimpleScatterChart />,
+    },
+    {
+      title: "Multi Axes Scatter Chart",
+      component: <MultipleYAxesScatterChart />,
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.charts}>
@@ -108,6 +144,18 @@ function Home() {
           </div>
         ))}
         {lineCharts.map((container) => (
+          <div className="chartWrapper" key={container.title}>
+            <span>{container.title}</span>
+            {container.component}
+          </div>
+        ))}
+        {pieCharts.map((container) => (
+          <div className="chartWrapper" key={container.title}>
+            <span>{container.title}</span>
+            {container.component}
+          </div>
+        ))}
+        {scatterChart.map((container) => (
           <div className="chartWrapper" key={container.title}>
             <span>{container.title}</span>
             {container.component}
