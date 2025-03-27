@@ -13,6 +13,7 @@ import { startRecording, stopRecording } from "utils/speechRecognition";
 import { getSQLQueryFromGemini } from "utils/getSqlQuery";
 import { copyToClipboard } from "utils/copyToClipBoard";
 import { toast } from "react-toastify";
+import { ClipLoader, PulseLoader } from "react-spinners";
 
 function GenerateQueryModal({
   onClick,
@@ -66,6 +67,7 @@ function GenerateQueryModal({
               onFocus={() => setActive(true)}
               onBlur={() => setActive(false)}
             />
+            {isRecording && <PulseLoader size={4} color="red" />}
             <MicrophoneIcon
               height={18}
               className={`${
@@ -77,12 +79,13 @@ function GenerateQueryModal({
               }}
             />
           </div>
+
           <button
             className={`${styles.btn} ${styles.btnGradient}`}
             onClick={onClickHandler}
             disabled={loading}
           >
-            {loading ? "Generating..." : "Send"}
+            {loading && <ClipLoader size={16} color="#fff" />}
             <PaperAirplaneIcon height={16} />
           </button>
         </div>
