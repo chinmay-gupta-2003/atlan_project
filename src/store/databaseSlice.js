@@ -4,6 +4,8 @@ const initialState = {
   tableSelected: { id: "", name: "" },
   databaseSelected: { id: "", name: "" },
   viewSelected: "",
+  querySelected: "",
+  queryHistory: [],
 };
 
 const databaseSlice = createSlice({
@@ -20,10 +22,21 @@ const databaseSlice = createSlice({
     setViewSelected: (state, action) => {
       state.viewSelected = action.payload;
     },
+    setQuerySelected: (state, action) => {
+      state.querySelected = action.payload;
+    },
+    addQueryToHistory: (state, action) => {
+      state.queryHistory.unshift(action.payload);
+    },
   },
 });
 
-export const { setTableSelected, setDatabaseSelected, setViewSelected } =
-  databaseSlice.actions;
+export const {
+  setTableSelected,
+  setDatabaseSelected,
+  setViewSelected,
+  setQuerySelected,
+  addQueryToHistory,
+} = databaseSlice.actions;
 
 export default databaseSlice.reducer;

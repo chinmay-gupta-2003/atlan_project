@@ -14,6 +14,7 @@ import {
 import styles from "components/Sidebar/Sidebar.module.css";
 import {
   setDatabaseSelected,
+  setQuerySelected,
   setTableSelected,
   setViewSelected,
 } from "store/databaseSlice";
@@ -97,6 +98,7 @@ function Sidebar() {
                   onClick={() => {
                     dispatch(setTableSelected(table));
                     dispatch(setViewSelected("table"));
+                    dispatch(setQuerySelected("1"));
                   }}
                 >
                   <p>{table.name}</p>

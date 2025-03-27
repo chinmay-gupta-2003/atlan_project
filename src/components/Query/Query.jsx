@@ -12,7 +12,9 @@ import styles from "components/Query/Query.module.css";
 import Modal from "components/Modal/Modal";
 
 import {
+  addQueryToHistory,
   setDatabaseSelected,
+  setQuerySelected,
   setTableSelected,
   setViewSelected,
 } from "store/databaseSlice";
@@ -23,18 +25,17 @@ import { copyToClipboard } from "utils/copyToClipBoard";
 
 function Query({ query, setQuery, onQueryExecute }) {
   const dispatch = useDispatch();
-  const { tableSelected, databaseSelected } = useSelector(
+  const { tableSelected, databaseSelected, queryHistory } = useSelector(
     (state) => state.database
   );
 
   const [active, setActive] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const [allQueries, setAllQueries] = useState([]);
 
   const handleFindClick = () => {
     if (!query) return toast.error("Please type a query");
 
-    setAllQueries((prev) => [{ time: new Date(), query }, ...prev]);
+    dispatch(addQueryToHistory({ time: formatDate(new Date()), query }));
 
     if (!databaseSelected.id) {
       const randomDatabase =
@@ -50,7 +51,12 @@ function Query({ query, setQuery, onQueryExecute }) {
       dispatch(setTableSelected(randomTable));
 
       dispatch(setViewSelected("table"));
+      dispatch(setQuerySelected("1"));
     } else onQueryExecute();
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") handleFindClick();
   };
 
   return (
@@ -66,6 +72,7 @@ function Query({ query, setQuery, onQueryExecute }) {
           placeholder="Type a query, or generate using AI"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
           onFocus={() => setActive(true)}
           onBlur={() => setActive(false)}
         />
@@ -83,16 +90,16 @@ function Query({ query, setQuery, onQueryExecute }) {
 
       <Modal open={openModal} setOpen={setOpenModal}>
         <div className={styles.modalContainer}>
-          {!allQueries.length && <span>No history found</span>}
+          {!queryHistory.length && <span>No history found</span>}
 
-          {allQueries.length &&
-            allQueries.map((query, index) => (
+          {queryHistory.length > 0 &&
+            queryHistory.map((query, index) => (
               <div
                 key={index}
                 className={styles.modalQuery}
                 onClick={() => copyToClipboard(query.query)}
               >
-                <span className={styles.date}>{formatDate(query.time)}</span>
+                <span className={styles.date}>{query.time}</span>
                 <span>{query.query}</span>
 
                 <ClipboardDocumentCheckIcon

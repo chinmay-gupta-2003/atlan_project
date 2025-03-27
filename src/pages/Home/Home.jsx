@@ -5,7 +5,9 @@ import { PulseLoader } from "react-spinners";
 import styles from "pages/Home/Home.module.css";
 import TableView from "pages/Home/TableView";
 
+import Query from "components/Query/Query";
 import ViewSelector from "components/ViewSelector/ViewSelector";
+import PredefinedQueries from "components/ViewSelector/PredefinedQueries";
 
 import {
   barCharts,
@@ -15,7 +17,6 @@ import {
 } from "constants/charts";
 
 import home from "assets/svg/home.svg";
-import Query from "components/Query/Query";
 
 function Home() {
   const { tableSelected, viewSelected } = useSelector(
@@ -61,7 +62,10 @@ function Home() {
         setQuery={setQuery}
         onQueryExecute={handleQueryExecute}
       />
-      {tableSelected.id && <ViewSelector />}
+      {tableSelected.id && <ViewSelector key={1} />}
+      {tableSelected.id && (
+        <PredefinedQueries key={2} onQueryExecute={handleQueryExecute} />
+      )}
 
       <div className={styles.charts}>
         {isLoading && (
@@ -85,6 +89,10 @@ function Home() {
         {!tableSelected.id && !isLoading && (
           <div className={styles.subContainer}>
             <img src={home} alt="image" className={styles.image} />
+            <span>
+              Select database and table to use predefined queries and get
+              valuable insights.
+            </span>
           </div>
         )}
       </div>
