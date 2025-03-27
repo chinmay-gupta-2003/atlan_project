@@ -39,7 +39,7 @@ function TableView() {
   }, [tableSelected.id]);
 
   return (
-    <div>
+    <>
       {isLoading && (
         <div className={styles.loader}>
           <PulseLoader color={"#17ddd6"} />
@@ -49,7 +49,7 @@ function TableView() {
       {tableSelected.id && !isLoading && (
         <Table data={tableData} columns={columns} />
       )}
-    </div>
+    </>
   );
 }
 

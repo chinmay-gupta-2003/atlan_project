@@ -4,8 +4,6 @@ import { PieChart } from "@mui/x-charts/PieChart";
 const data1 = [
   { label: "Group A", value: 400 },
   { label: "Group B", value: 300 },
-  { label: "Group C", value: 300 },
-  { label: "Group D", value: 200 },
 ];
 
 const data2 = [
@@ -16,10 +14,6 @@ const data2 = [
   { label: "B3", value: 40 },
   { label: "B4", value: 30 },
   { label: "B5", value: 50 },
-  { label: "C1", value: 100 },
-  { label: "C2", value: 200 },
-  { label: "D1", value: 150 },
-  { label: "D2", value: 50 },
 ];
 
 export default function TwoLevelPieChart() {

@@ -11,9 +11,9 @@
   flex-direction: column;
   gap: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 24rem;
-  min-width: 24rem;
-  max-width: 24rem;
+  width: 22rem;
+  min-width: 22rem;
+  max-width: 22rem;
   height: 100%;
   overflow: auto;
 }
