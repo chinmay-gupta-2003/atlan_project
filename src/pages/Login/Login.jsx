@@ -18,6 +18,8 @@ function Login() {
         throw new Error("Email and password are required");
 
       localStorage.setItem("token", true);
+      toast.success("Logged in successfully");
+
       navigate("/home");
     } catch (error) {
       console.error(error);

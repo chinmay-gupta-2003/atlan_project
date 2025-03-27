@@ -8,7 +8,7 @@ function Form({ userData, setUserData, login }) {
     <div className={styles.container}>
       <div className={styles.formWrapper}>
         <span className={styles.heading}>
-          <span>Heading</span>
+          <span>Data Analyst</span>
         </span>
 
         <div className={styles.inputContainer}>
