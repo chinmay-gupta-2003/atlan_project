@@ -2,7 +2,9 @@
   padding: 2rem;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .subContainer {
@@ -14,6 +16,7 @@
   justify-content: center;
   height: 100%;
   color: var(--primary-black);
+  grid-column: 1/-1;
 }
 
 .image {
@@ -26,10 +29,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-column: 1/-1;
 }
 
 .charts {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  height: 100%;
+  overflow: auto;
+  padding-right: 1rem;
 }
