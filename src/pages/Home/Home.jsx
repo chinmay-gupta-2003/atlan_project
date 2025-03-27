@@ -24,6 +24,7 @@ function Home() {
 
   const [query, setQuery] = useState("");
   const [refreshKey, setRefreshKey] = useState(0);
+  const [refreshKeyTable, setRefreshKeyTable] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -38,6 +39,8 @@ function Home() {
 
   const handleQueryExecute = () => {
     setRefreshKey((prev) => prev + 1);
+
+    if (viewSelected === "table") setRefreshKeyTable((prev) => prev + 1);
   };
 
   const getCharts = () => {
@@ -67,7 +70,9 @@ function Home() {
           </div>
         )}
 
-        {!isLoading && viewSelected === "table" && <TableView />}
+        {!isLoading && viewSelected === "table" && (
+          <TableView refreshKey={refreshKeyTable} />
+        )}
 
         {!isLoading &&
           getCharts().map((container) => (
@@ -80,9 +85,6 @@ function Home() {
         {!tableSelected.id && !isLoading && (
           <div className={styles.subContainer}>
             <img src={home} alt="image" className={styles.image} />
-            <span>
-              Please select a database and table to check predefined queries.
-            </span>
           </div>
         )}
       </div>

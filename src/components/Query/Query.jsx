@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import { BoltIcon, ClockIcon } from "@heroicons/react/24/solid";
+import { BoltIcon, ClockIcon, SparklesIcon } from "@heroicons/react/24/solid";
 
 import styles from "components/Query/Query.module.css";
 import {
@@ -15,7 +15,7 @@ import { tables } from "constants/tables";
 function Query({ query, setQuery, onQueryExecute }) {
   const dispatch = useDispatch();
   const [active, setActive] = useState(false);
-  const { viewSelected, tableSelected, databaseSelected } = useSelector(
+  const { tableSelected, databaseSelected } = useSelector(
     (state) => state.database
   );
 
@@ -36,18 +36,7 @@ function Query({ query, setQuery, onQueryExecute }) {
       dispatch(setTableSelected(randomTable));
 
       dispatch(setViewSelected("table"));
-    } else {
-      if (viewSelected === "table") {
-        const availableTables = tables[databaseSelected.id];
-
-        const randomTable =
-          availableTables[Math.floor(Math.random() * availableTables.length)];
-
-        dispatch(setTableSelected(randomTable));
-      } else onQueryExecute();
-    }
-
-    setQuery("");
+    } else onQueryExecute();
   };
 
   return (
@@ -56,7 +45,7 @@ function Query({ query, setQuery, onQueryExecute }) {
         <ClockIcon height={18} className={styles.queryIcon} />
         <input
           type="text"
-          placeholder="Type a query : SELECT * from USERS;"
+          placeholder="Type a query, or generate using AI"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setActive(true)}
@@ -67,6 +56,11 @@ function Query({ query, setQuery, onQueryExecute }) {
       <button className={styles.btn} onClick={handleFindClick}>
         <span>Execute</span>
         <BoltIcon height={16} />
+      </button>
+
+      <button className={`${styles.btn} ${styles.btnGradient}`}>
+        <span>Generate</span>
+        <SparklesIcon height={16} />
       </button>
     </div>
   );

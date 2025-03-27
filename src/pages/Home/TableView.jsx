@@ -9,7 +9,7 @@ import { columnsMapping } from "constants/mappings";
 
 import styles from "pages/Home/Home.module.css";
 
-function TableView() {
+function TableView({ refreshKey }) {
   const { tableSelected } = useSelector((state) => state.database);
 
   const [tableData, setTableData] = useState([]);
@@ -18,25 +18,27 @@ function TableView() {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async () => {
-    if (tableSelected.id) {
-      try {
-        setIsLoading(true);
+    if (!tableSelected.id) return [];
 
-        const data = await getTableData(tableSelected.id);
+    try {
+      setIsLoading(true);
 
-        setTableData(data);
-        setColumns(columnsMapping[tableSelected.id]);
-      } catch (error) {
-        console.error("Error fetching table data:", error);
-      } finally {
-        setIsLoading(false);
-      }
+      const data = await getTableData(tableSelected.id);
+
+      const filteredData = data.filter(() => Math.random() > 0.4);
+
+      setTableData(filteredData);
+      setColumns(columnsMapping[tableSelected.id]);
+    } catch (error) {
+      console.error("Error fetching table data:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
     fetchData();
-  }, [tableSelected.id]);
+  }, [tableSelected.id, refreshKey]);
 
   return (
     <>

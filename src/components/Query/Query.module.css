@@ -48,3 +48,19 @@
   align-items: center;
   gap: 0.6rem;
 }
+
+.btnGradient {
+  background: linear-gradient(
+    45deg,
+    #082c66 0%,
+    #003d73 33%,
+    #026e8e 66%,
+    #067591 100%
+  );
+  color: var(--primary-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.btnGradient:hover {
+  opacity: 0.9;
+}
