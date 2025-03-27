@@ -23,7 +23,6 @@ function Home() {
     (state) => state.database
   );
 
-  const [query, setQuery] = useState("");
   const [refreshKey, setRefreshKey] = useState(0);
   const [refreshKeyTable, setRefreshKeyTable] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
@@ -57,11 +56,7 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      <Query
-        query={query}
-        setQuery={setQuery}
-        onQueryExecute={handleQueryExecute}
-      />
+      <Query onQueryExecute={handleQueryExecute} />
       {tableSelected.id && <ViewSelector key={1} />}
       {tableSelected.id && (
         <PredefinedQueries key={2} onQueryExecute={handleQueryExecute} />

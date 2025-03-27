@@ -1,15 +1,9 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import {
-  BoltIcon,
-  ClipboardDocumentCheckIcon,
-  ClockIcon,
-  SparklesIcon,
-} from "@heroicons/react/24/solid";
+import { BoltIcon, ClockIcon, SparklesIcon } from "@heroicons/react/24/solid";
 
 import styles from "components/Query/Query.module.css";
-import Modal from "components/Modal/Modal";
 
 import {
   addQueryToHistory,
@@ -21,16 +15,20 @@ import {
 import { databases } from "constants/databases";
 import { tables } from "constants/tables";
 import { formatDate } from "utils/formatDate";
-import { copyToClipboard } from "utils/copyToClipBoard";
+import QueryHistoryModal from "components/Modals/QueryHistoryModal";
+import GenerateQueryModal from "components/Modals/GenerateQueryModal";
 
-function Query({ query, setQuery, onQueryExecute }) {
+function Query({ onQueryExecute }) {
   const dispatch = useDispatch();
-  const { tableSelected, databaseSelected, queryHistory } = useSelector(
+  const { tableSelected, databaseSelected } = useSelector(
     (state) => state.database
   );
 
+  const [query, setQuery] = useState("");
   const [active, setActive] = useState(false);
+  const [generateQuery, setGenerateQuery] = useState("");
   const [openModal, setOpenModal] = useState(false);
+  const [openModalGenerate, setOpenModalGenerate] = useState(false);
 
   const handleFindClick = () => {
     if (!query) return toast.error("Please type a query");
@@ -59,6 +57,12 @@ function Query({ query, setQuery, onQueryExecute }) {
     if (e.key === "Enter") handleFindClick();
   };
 
+  const handleKeyDownGenerate = (e) => {
+    if (e.key === "Enter") {
+      console.log("Sending query:", generateQuery);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={`${styles.input} ${active ? styles.active : ""}`}>
@@ -82,34 +86,26 @@ function Query({ query, setQuery, onQueryExecute }) {
         <span>Execute</span>
         <BoltIcon height={16} />
       </button>
-
-      <button className={`${styles.btn} ${styles.btnGradient}`}>
+      <button
+        className={`${styles.btn} ${styles.btnGradient}`}
+        onClick={() => setOpenModalGenerate(true)}
+      >
         <span>Generate</span>
         <SparklesIcon height={16} />
       </button>
 
-      <Modal open={openModal} setOpen={setOpenModal}>
-        <div className={styles.modalContainer}>
-          {!queryHistory.length && <span>No history found</span>}
-
-          {queryHistory.length > 0 &&
-            queryHistory.map((query, index) => (
-              <div
-                key={index}
-                className={styles.modalQuery}
-                onClick={() => copyToClipboard(query.query)}
-              >
-                <span className={styles.date}>{query.time}</span>
-                <span>{query.query}</span>
-
-                <ClipboardDocumentCheckIcon
-                  height={18}
-                  className={styles.copyIcon}
-                />
-              </div>
-            ))}
-        </div>
-      </Modal>
+      <QueryHistoryModal
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        setQuery={setQuery}
+      />
+      <GenerateQueryModal
+        generateQuery={generateQuery}
+        setGenerateQuery={setGenerateQuery}
+        openModalGenerate={openModalGenerate}
+        setOpenModalGenerate={setOpenModalGenerate}
+        handleKeyDownGenerate={handleKeyDownGenerate}
+      />
     </div>
   );
 }
