@@ -44,6 +44,26 @@ html {
   align-items: center;
 }
 
+.chartWrapper {
+  background-color: var(--primary-white);
+  border: 2px solid var(--secondary-gray);
+  border-radius: 0.4rem;
+  font-family: inherit;
+  height: 36rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 0 1rem;
+}
+
+.chartWrapper span {
+  font-size: 2rem;
+  color: var(--primary-teal);
+  font-weight: 500;
+}
+
 .hiddenScroll::-webkit-scrollbar {
   width: 0;
 }
