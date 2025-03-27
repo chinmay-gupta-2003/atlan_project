@@ -16,7 +16,7 @@ function App() {
           <BrowserRouter>
             <Router />
           </BrowserRouter>
-          <ToastContainer />
+          <ToastContainer position="top-center" />
         </div>
       </ThemeProvider>
     </Provider>

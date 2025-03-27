@@ -2,6 +2,7 @@
   border: 1px solid var(--primary-black);
   border-radius: 0.6rem;
   padding: 0.8rem 1rem;
+  font-family: inherit;
 }
 
 .input:focus {

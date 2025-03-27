@@ -6,17 +6,11 @@ const SimpleBarChart = lazy(() =>
 const StackedBarChart = lazy(() =>
   import("components/Charts/BarCharts/StackedBarChart")
 );
-const PositiveAndNegativeBarChart = lazy(() =>
-  import("components/Charts/BarCharts/PositiveAndNegativeBarChart")
-);
 const BarChartStackedBySign = lazy(() =>
   import("components/Charts/BarCharts/BarChartStackedBySign")
 );
 const BiaxialBarChart = lazy(() =>
   import("components/Charts/BarCharts/BiaxialBarChart")
-);
-const TinyBarChart = lazy(() =>
-  import("components/Charts/BarCharts/TinyBarChart")
 );
 
 const SimpleLineChart = lazy(() =>
@@ -56,14 +50,6 @@ const Loading = () => <div>Loading...</div>;
 
 export const barCharts = [
   {
-    title: "Tiny Bar Chart",
-    component: (
-      <Suspense fallback={<Loading />}>
-        <TinyBarChart />
-      </Suspense>
-    ),
-  },
-  {
     title: "Simple Bar Chart",
     component: (
       <Suspense fallback={<Loading />}>
@@ -79,14 +65,7 @@ export const barCharts = [
       </Suspense>
     ),
   },
-  {
-    title: "Positive Negative Bar Chart",
-    component: (
-      <Suspense fallback={<Loading />}>
-        <PositiveAndNegativeBarChart />
-      </Suspense>
-    ),
-  },
+
   {
     title: "Bar Chart Stacked By Sign",
     component: (
@@ -150,6 +129,14 @@ export const pieCharts = [
     ),
   },
   {
+    title: "Pie Chart With Customized Label",
+    component: (
+      <Suspense fallback={<Loading />}>
+        <PieChartWithCustomizedLabel />
+      </Suspense>
+    ),
+  },
+  {
     title: "Simple Pie Chart",
     component: (
       <Suspense fallback={<Loading />}>
@@ -162,14 +149,6 @@ export const pieCharts = [
     component: (
       <Suspense fallback={<Loading />}>
         <StraightAnglePieChart />
-      </Suspense>
-    ),
-  },
-  {
-    title: "Pie Chart With Customized Label",
-    component: (
-      <Suspense fallback={<Loading />}>
-        <PieChartWithCustomizedLabel />
       </Suspense>
     ),
   },

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { PulseLoader } from "react-spinners";
 
-import home from "assets/svg/home.svg";
 import styles from "pages/Home/Home.module.css";
+import TableView from "pages/Home/TableView";
 
 import ViewSelector from "components/ViewSelector/ViewSelector";
 
@@ -13,12 +13,17 @@ import {
   pieCharts,
   scatterChart,
 } from "constants/charts";
-import TableView from "pages/Home/TableView";
+
+import home from "assets/svg/home.svg";
+import Query from "components/Query/Query";
 
 function Home() {
   const { tableSelected, viewSelected } = useSelector(
     (state) => state.database
   );
+
+  const [query, setQuery] = useState("");
+  const [refreshKey, setRefreshKey] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -30,6 +35,10 @@ function Home() {
       return () => clearTimeout(timeout);
     }
   }, [viewSelected]);
+
+  const handleQueryExecute = () => {
+    setRefreshKey((prev) => prev + 1);
+  };
 
   const getCharts = () => {
     const chartsMap = {
@@ -44,6 +53,11 @@ function Home() {
 
   return (
     <div className={styles.container}>
+      <Query
+        query={query}
+        setQuery={setQuery}
+        onQueryExecute={handleQueryExecute}
+      />
       {tableSelected.id && <ViewSelector />}
 
       <div className={styles.charts}>
@@ -57,7 +71,7 @@ function Home() {
 
         {!isLoading &&
           getCharts().map((container) => (
-            <div className="chartWrapper" key={container.title}>
+            <div className="chartWrapper" key={container.title + refreshKey}>
               <span>{container.title}</span>
               {container.component}
             </div>
