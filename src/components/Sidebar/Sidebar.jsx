@@ -12,7 +12,11 @@ import {
 } from "@heroicons/react/24/solid";
 
 import styles from "components/Sidebar/Sidebar.module.css";
-import { setDatabaseSelected, setTableSelected } from "store/databaseSlice";
+import {
+  setDatabaseSelected,
+  setTableSelected,
+  setViewSelected,
+} from "store/databaseSlice";
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -31,7 +35,9 @@ function Sidebar() {
 
   return (
     <div className={styles.container}>
-      <div className={`${styles.sidebar} ${styles.sidebarGradient}`}>
+      <div
+        className={`${styles.sidebar} ${styles.sidebarGradient} hiddenScroll`}
+      >
         <div className={styles.userInfo}>
           <img src={avatar} alt="avatar" className={styles.avatar} />
           <div>
@@ -58,6 +64,7 @@ function Sidebar() {
                 onClick={() => {
                   dispatch(setDatabaseSelected(database));
                   dispatch(setTableSelected({ id: "", name: "" }));
+                  dispatch(setViewSelected(""));
                 }}
               >
                 <p>{database.name}</p>
@@ -86,7 +93,10 @@ function Sidebar() {
                   className={`${styles.databaseLink} ${
                     tableSelected.id === table.id ? styles.active : ""
                   }`}
-                  onClick={() => dispatch(setTableSelected(table))}
+                  onClick={() => {
+                    dispatch(setTableSelected(table));
+                    dispatch(setViewSelected("table"));
+                  }}
                 >
                   <p>{table.name}</p>
                 </div>

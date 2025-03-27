@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--primary-teal);
+  color: var(--primary-teal);
+  background-color: var(--primary-white);
+  border-radius: 0.4rem;
+}
+
+.active {
+  color: var(--primary-white);
+  background-color: var(--primary-teal);
+  font-weight: 500;
+}

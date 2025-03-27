@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   tableSelected: { id: "", name: "" },
   databaseSelected: { id: "", name: "" },
+  viewSelected: "",
 };
 
 const databaseSlice = createSlice({
@@ -16,9 +17,13 @@ const databaseSlice = createSlice({
     setDatabaseSelected: (state, action) => {
       state.databaseSelected = action.payload;
     },
+    setViewSelected: (state, action) => {
+      state.viewSelected = action.payload;
+    },
   },
 });
 
-export const { setTableSelected, setDatabaseSelected } = databaseSlice.actions;
+export const { setTableSelected, setDatabaseSelected, setViewSelected } =
+  databaseSlice.actions;
 
 export default databaseSlice.reducer;
