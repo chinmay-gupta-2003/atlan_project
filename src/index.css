@@ -29,7 +29,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  background-color: var(--secondary-white);
+  background-color: var(--primary-white);
 }
 
 html {

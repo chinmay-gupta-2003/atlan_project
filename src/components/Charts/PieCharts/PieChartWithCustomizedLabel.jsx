@@ -1,25 +1,23 @@
 import * as React from "react";
-
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
 
-const data = [
-  { label: "Group A", value: 400 },
-  { label: "Group B", value: 300 },
-  { label: "Group C", value: 300 },
-  { label: "Group D", value: 200 },
-];
+const generateRandomData = () =>
+  ["Group A", "Group B", "Group C", "Group D"].map((label) => ({
+    label,
+    value: Math.floor(Math.random() * 500) + 100,
+  }));
 
-const sizing = {
-  margin: { right: 5 },
-};
-const TOTAL = data.map((item) => item.value).reduce((a, b) => a + b, 0);
-
-const getArcLabel = (params) => {
-  const percent = params.value / TOTAL;
-  return `${(percent * 100).toFixed(0)}%`;
-};
+const sizing = { margin: { right: 5 } };
 
 export default function PieChartWithCustomizedLabel() {
+  const data = generateRandomData();
+  const TOTAL = data.reduce((sum, item) => sum + item.value, 0);
+
+  const getArcLabel = (params) => {
+    const percent = (params.value / TOTAL) * 100;
+    return `${percent.toFixed(0)}%`;
+  };
+
   return (
     <PieChart
       series={[

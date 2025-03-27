@@ -1,14 +1,15 @@
 import * as React from "react";
 import { PieChart } from "@mui/x-charts/PieChart";
 
-const data = [
-  { label: "Group A", value: 400 },
-  { label: "Group B", value: 300 },
-  { label: "Group C", value: 300 },
-  { label: "Group D", value: 200 },
-];
+const generateRandomData = () =>
+  ["Group A", "Group B", "Group C", "Group D"].map((label) => ({
+    label,
+    value: Math.floor(Math.random() * 500) + 100,
+  }));
 
 export default function StraightAnglePieChart() {
+  const data = generateRandomData();
+
   return (
     <PieChart
       series={[

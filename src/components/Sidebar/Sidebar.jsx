@@ -86,6 +86,7 @@ function Sidebar() {
                 Please select a database to view tables.
               </p>
             )}
+
             {databaseSelected.id &&
               tables[databaseSelected.id].map((table) => (
                 <div

@@ -1,7 +1,9 @@
 import * as React from "react";
 import { BarChart } from "@mui/x-charts/BarChart";
 
-const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
+const generateRandomData = (length, range) =>
+  Array.from({ length }, () => Math.floor(Math.random() * (range * 2) - range));
+
 const xLabels = [
   "Page A",
   "Page B",
@@ -13,6 +15,8 @@ const xLabels = [
 ];
 
 export default function TinyBarChart() {
+  const uData = generateRandomData(xLabels.length, 5000);
+
   return (
     <BarChart
       series={[{ data: uData, label: "uv", id: "uvId" }]}

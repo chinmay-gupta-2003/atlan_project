@@ -1,22 +1,19 @@
 import * as React from "react";
 import { PieChart } from "@mui/x-charts/PieChart";
 
-const data1 = [
-  { label: "Group A", value: 400 },
-  { label: "Group B", value: 300 },
-];
-
-const data2 = [
-  { label: "A1", value: 100 },
-  { label: "A2", value: 300 },
-  { label: "B1", value: 100 },
-  { label: "B2", value: 80 },
-  { label: "B3", value: 40 },
-  { label: "B4", value: 30 },
-  { label: "B5", value: 50 },
-];
+const generateRandomData = (labels, range) =>
+  labels.map((label) => ({
+    label,
+    value: Math.floor(Math.random() * range) + 50,
+  }));
 
 export default function TwoLevelPieChart() {
+  const data1 = generateRandomData(["Group A", "Group B"], 500);
+  const data2 = generateRandomData(
+    ["A1", "A2", "B1", "B2", "B3", "B4", "B5"],
+    200
+  );
+
   return (
     <PieChart
       series={[
