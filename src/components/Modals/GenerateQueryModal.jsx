@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {
-  ClipboardDocumentCheckIcon,
   MicrophoneIcon,
   PaperAirplaneIcon,
+  PlayIcon,
   SparklesIcon,
 } from "@heroicons/react/24/solid";
 
@@ -11,7 +11,6 @@ import styles from "components/Query/Query.module.css";
 
 import { startRecording, stopRecording } from "utils/speechRecognition";
 import { getSQLQueryFromGemini } from "utils/getSqlQuery";
-import { copyToClipboard } from "utils/copyToClipBoard";
 import { toast } from "react-toastify";
 import { ClipLoader, PulseLoader } from "react-spinners";
 
@@ -94,10 +93,7 @@ function GenerateQueryModal({
           <div className={styles.modalQuery} onClick={onUseHandler}>
             <span className={styles.date}>{generatedQuery}</span>
 
-            <ClipboardDocumentCheckIcon
-              height={18}
-              className={styles.copyIcon}
-            />
+            <PlayIcon height={18} className={styles.copyIcon} />
           </div>
         )}
       </div>
