@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, Outlet } from "react-router-dom";
@@ -7,6 +8,8 @@ import { databases } from "constants/databases";
 import avatar from "assets/images/avatar.jpg";
 import {
   ArrowRightEndOnRectangleIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
   CircleStackIcon,
   ClipboardDocumentCheckIcon,
   TableCellsIcon,
@@ -20,14 +23,16 @@ import {
   setViewSelected,
 } from "store/databaseSlice";
 import { copyToClipboard } from "utils/copyToClipBoard";
+import { columnsMapping } from "constants/mappings";
 
 function Sidebar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
   const { tableSelected, databaseSelected } = useSelector(
     (state) => state.database
   );
+
+  const [showTableSchema, setShowTableSchema] = useState(false);
 
   const logout = () => {
     localStorage.clear();
@@ -77,6 +82,7 @@ function Sidebar() {
                       copyToClipboard(database.name, "Database name")
                     }
                     height={16}
+                    className={styles.copyIcon}
                   />
                 )}
               </div>
@@ -101,22 +107,57 @@ function Sidebar() {
             {databaseSelected.id &&
               tables[databaseSelected.id].map((table) => (
                 <div
-                  key={table.id}
-                  className={`${styles.databaseLink} ${
+                  className={`${styles.tableSchemaContainer} ${
                     tableSelected.id === table.id ? styles.active : ""
                   }`}
-                  onClick={() => {
-                    dispatch(setTableSelected(table));
-                    dispatch(setViewSelected("table"));
-                    dispatch(setQuerySelected("1"));
-                  }}
                 >
-                  <p>{table.name}</p>
-                  {tableSelected.id === table.id && (
-                    <ClipboardDocumentCheckIcon
-                      onClick={() => copyToClipboard(table.name, "Table name")}
-                      height={16}
-                    />
+                  <div
+                    key={table.id}
+                    className={styles.databaseLink}
+                    onClick={() => {
+                      dispatch(setTableSelected(table));
+                      dispatch(setViewSelected("table"));
+                      dispatch(setQuerySelected("1"));
+                      setShowTableSchema(false);
+                    }}
+                  >
+                    {tableSelected.id === table.id && !showTableSchema && (
+                      <ChevronRightIcon
+                        height={16}
+                        className={styles.chevronIcon}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setShowTableSchema(true);
+                        }}
+                      />
+                    )}
+                    {tableSelected.id === table.id && showTableSchema && (
+                      <ChevronDownIcon
+                        height={16}
+                        className={styles.chevronIcon}
+                        onClick={() => setShowTableSchema(false)}
+                      />
+                    )}
+                    <p>{table.name}</p>
+                    {tableSelected.id === table.id && (
+                      <ClipboardDocumentCheckIcon
+                        onClick={() =>
+                          copyToClipboard(table.name, "Table name")
+                        }
+                        height={16}
+                        className={styles.copyIcon}
+                      />
+                    )}
+                  </div>
+                  {tableSelected.id === table.id && showTableSchema && (
+                    <div className={styles.tableSchema}>
+                      {columnsMapping[tableSelected.id].map((column) => (
+                        <div className={styles.schemaType}>
+                          <span>{column.accessorKey}</span>
+                          <span>({typeof column.accessorKey})</span>
+                        </div>
+                      ))}
+                    </div>
                   )}
                 </div>
               ))}
