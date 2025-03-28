@@ -91,7 +91,7 @@ function GenerateQueryModal({
 
         {generatedQuery && (
           <div className={styles.modalQuery} onClick={onUseHandler}>
-            <span className={styles.date}>{generatedQuery}</span>
+            <span className={styles.queryGenerated}>{generatedQuery}</span>
 
             <PlayIcon height={18} className={styles.copyIcon} />
           </div>

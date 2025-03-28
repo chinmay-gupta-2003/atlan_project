@@ -89,6 +89,11 @@
   min-width: max-content;
 }
 
+.queryGenerated {
+  font-weight: 500;
+  color: var(--primary-teal);
+}
+
 .copyIcon {
   color: var(--primary-teal);
   margin-left: auto;
