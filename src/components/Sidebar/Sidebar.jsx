@@ -141,9 +141,10 @@ function Sidebar() {
                     <p>{table.name}</p>
                     {tableSelected.id === table.id && (
                       <ClipboardDocumentCheckIcon
-                        onClick={() =>
-                          copyToClipboard(table.name, "Table name")
-                        }
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          copyToClipboard(table.name, "Table name");
+                        }}
                         height={16}
                         className={styles.copyIcon}
                       />
@@ -153,8 +154,8 @@ function Sidebar() {
                     <div className={styles.tableSchema}>
                       {columnsMapping[tableSelected.id].map((column) => (
                         <div className={styles.schemaType}>
-                          <span>{column.accessorKey}</span>
-                          <span>({typeof column.accessorKey})</span>
+                          <strong>{column.accessorKey} : </strong>
+                          <i>{typeof column.accessorKey}</i>
                         </div>
                       ))}
                     </div>

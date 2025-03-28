@@ -159,8 +159,18 @@
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  gap: 0.8rem;
-  padding: 0 0 1rem 3rem;
+  gap: 0.4rem;
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px dashed var(--secondary-gray);
+  padding: 0.6rem 1rem;
+  background: linear-gradient(
+    135deg,
+    #082c66 0%,
+    #003d73 33%,
+    #026e8e 66%,
+    #067591 100%
+  );
 }
 
 .schemaType {
