@@ -86,6 +86,7 @@
 .date {
   font-weight: 500;
   color: var(--primary-teal);
+  min-width: max-content;
 }
 
 .copyIcon {

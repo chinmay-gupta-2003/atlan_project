@@ -8,6 +8,7 @@ import avatar from "assets/images/avatar.jpg";
 import {
   ArrowRightEndOnRectangleIcon,
   CircleStackIcon,
+  ClipboardDocumentCheckIcon,
   TableCellsIcon,
 } from "@heroicons/react/24/solid";
 
@@ -18,6 +19,7 @@ import {
   setTableSelected,
   setViewSelected,
 } from "store/databaseSlice";
+import { copyToClipboard } from "utils/copyToClipBoard";
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -69,6 +71,14 @@ function Sidebar() {
                 }}
               >
                 <p>{database.name}</p>
+                {databaseSelected.id === database.id && (
+                  <ClipboardDocumentCheckIcon
+                    onClick={() =>
+                      copyToClipboard(database.name, "Database name")
+                    }
+                    height={16}
+                  />
+                )}
               </div>
             ))}
           </div>
@@ -102,6 +112,12 @@ function Sidebar() {
                   }}
                 >
                   <p>{table.name}</p>
+                  {tableSelected.id === table.id && (
+                    <ClipboardDocumentCheckIcon
+                      onClick={() => copyToClipboard(table.name, "Table name")}
+                      height={16}
+                    />
+                  )}
                 </div>
               ))}
           </div>

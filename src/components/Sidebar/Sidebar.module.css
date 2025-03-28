@@ -79,6 +79,8 @@
   padding: 1rem;
   border-radius: 0.4rem;
   color: var(--primary-white);
+  display: flex;
+  justify-content: space-between;
 }
 
 .databaseLink.active {
