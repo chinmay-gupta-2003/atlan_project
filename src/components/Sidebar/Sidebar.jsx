@@ -110,9 +110,9 @@ function Sidebar() {
                   className={`${styles.tableSchemaContainer} ${
                     tableSelected.id === table.id ? styles.active : ""
                   }`}
+                  key={table.id}
                 >
                   <div
-                    key={table.id}
                     className={styles.databaseLink}
                     onClick={() => {
                       dispatch(setTableSelected(table));
@@ -152,8 +152,8 @@ function Sidebar() {
                   </div>
                   {tableSelected.id === table.id && showTableSchema && (
                     <div className={styles.tableSchema}>
-                      {columnsMapping[tableSelected.id].map((column) => (
-                        <div className={styles.schemaType}>
+                      {columnsMapping[tableSelected.id].map((column, index) => (
+                        <div className={styles.schemaType} key={index}>
                           <strong>{column.accessorKey} : </strong>
                           <i>{typeof column.accessorKey}</i>
                         </div>

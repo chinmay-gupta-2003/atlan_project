@@ -62,35 +62,36 @@ function Home() {
         <PredefinedQueries key={2} onQueryExecute={handleQueryExecute} />
       )}
 
-      <div className={styles.charts}>
-        {isLoading && (
-          <div className={styles.loader}>
-            <PulseLoader color={"#17ddd6"} />
-          </div>
-        )}
+      {isLoading && (
+        <div className={styles.loader}>
+          <PulseLoader color={"#17ddd6"} />
+        </div>
+      )}
 
-        {!isLoading && viewSelected === "table" && (
-          <TableView refreshKey={refreshKeyTable} />
-        )}
+      {!isLoading && tableSelected.id && viewSelected === "table" && (
+        <TableView refreshKey={refreshKeyTable} />
+      )}
 
-        {!isLoading &&
-          getCharts().map((container) => (
+      {!isLoading && tableSelected.id && viewSelected !== "table" && (
+        <div className={styles.charts}>
+          {getCharts().map((container) => (
             <div className="chartWrapper" key={container.title + refreshKey}>
               <span>{container.title}</span>
               {container.component}
             </div>
           ))}
+        </div>
+      )}
 
-        {!tableSelected.id && !isLoading && (
-          <div className={styles.subContainer}>
-            <img src={home} alt="image" className={styles.image} />
-            <span>
-              Select database and table to use predefined queries and get
-              valuable insights.
-            </span>
-          </div>
-        )}
-      </div>
+      {!tableSelected.id && !isLoading && (
+        <div className={styles.subContainer}>
+          <img src={home} alt="image" className={styles.image} />
+          <span>
+            Select database and table to use predefined queries and get valuable
+            insights.
+          </span>
+        </div>
+      )}
     </div>
   );
 }

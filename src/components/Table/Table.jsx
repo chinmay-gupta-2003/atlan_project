@@ -7,7 +7,7 @@ import { sortData } from "utils/sortData";
 
 function Table({ data = [], columns = [] }) {
   const [pageNumber, setPageNumber] = useState(1);
-  const [pageLimit, setPageLimit] = useState(10);
+  const [pageLimit, setPageLimit] = useState(500);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
   const handlePageLimitChange = (event) => {
@@ -75,6 +75,9 @@ function Table({ data = [], columns = [] }) {
           <option value={25}>25</option>
           <option value={50}>50</option>
           <option value={100}>100</option>
+          <option value={500}>500</option>
+          <option value={1000}>1000</option>
+          <option value={2000}>2000</option>
         </select>
         <Pagination
           totalPages={totalPages(data, pageLimit)}

@@ -16,7 +16,7 @@
   justify-content: center;
   height: 100%;
   color: var(--primary-black);
-  grid-column: 1/-1;
+  flex-grow: 1;
 }
 
 .image {
@@ -37,6 +37,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   height: 100%;
-  overflow: auto;
   padding-right: 1rem;
+  overflow: auto;
 }
