@@ -69,7 +69,10 @@ function Home() {
       )}
 
       {!isLoading && tableSelected.id && viewSelected === "table" && (
-        <TableView refreshKey={refreshKeyTable} />
+        <TableView
+          refreshKey={refreshKeyTable}
+          setRefreshKey={setRefreshKeyTable}
+        />
       )}
 
       {!isLoading && tableSelected.id && viewSelected !== "table" && (

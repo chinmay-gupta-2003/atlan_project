@@ -13,14 +13,10 @@
 }
 
 .pageIndex {
-  color: #999999;
-  cursor: pointer;
-  padding: 4px;
+  color: var(--primary-gray);
 }
 
 .active {
-  color: #0a9ce0;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 4px;
+  color: var(--primary-teal);
+  font-weight: 500;
 }

@@ -5,15 +5,26 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 
-function Pagination({ setCurrentPage, totalPages, currentPage }) {
+function Pagination({
+  setCurrentPage,
+  totalPages,
+  currentPage,
+  pageLimit,
+  setRefreshKey,
+}) {
   const handlePageChange = (page) => {
-    if (page >= 1 && page <= totalPages) {
+    if (page >= 1 && page * pageLimit <= totalPages) {
       setCurrentPage(page);
+      setRefreshKey((prev) => prev + 1);
     }
   };
 
   return (
     <div className={styles.container}>
+      <span className={styles.active}>
+        {(currentPage - 1) * pageLimit + 1} - {currentPage * pageLimit}
+        <span className={styles.pageIndex}> of {totalPages}</span>
+      </span>
       <ArrowLeftCircleIcon
         className={`${styles.icon} ${currentPage === 1 ? styles.disabled : ""}`}
         onClick={() => handlePageChange(currentPage - 1)}
@@ -21,19 +32,6 @@ function Pagination({ setCurrentPage, totalPages, currentPage }) {
         tabIndex={0}
         aria-disabled={currentPage === 1}
       />
-
-      {Array.from({ length: totalPages }, (_, i) => i + 1).map((value) => (
-        <span
-          key={value}
-          onClick={() => handlePageChange(value)}
-          className={value === currentPage ? styles.active : styles.pageIndex}
-          role="button"
-          tabIndex={0}
-        >
-          {value}
-        </span>
-      ))}
-
       <ArrowRightCircleIcon
         className={`${styles.icon} ${
           currentPage === totalPages ? styles.disabled : ""

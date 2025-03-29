@@ -9,13 +9,17 @@ import { columnsMapping } from "constants/mappings";
 
 import styles from "pages/Home/Home.module.css";
 
-function TableView({ refreshKey }) {
+function TableView({ refreshKey, setRefreshKey }) {
   const { tableSelected } = useSelector((state) => state.database);
 
   const [tableData, setTableData] = useState([]);
   const [columns, setColumns] = useState([]);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [pageLimit, setPageLimit] = useState(25);
 
   const [isLoading, setIsLoading] = useState(false);
+
+  const numberOfRecords = tableSelected.id === 404 ? 1000000 : 5000;
 
   const fetchData = async () => {
     if (!tableSelected.id) return [];
@@ -25,14 +29,14 @@ function TableView({ refreshKey }) {
 
       const data = await getTableData(tableSelected.id);
 
-      const filteredData = data.filter(() => Math.random() > 0.4);
-
-      setTableData(filteredData);
+      setTableData(data);
       setColumns(columnsMapping[tableSelected.id]);
     } catch (error) {
       console.error("Error fetching table data:", error);
     } finally {
-      setIsLoading(false);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 500);
     }
   };
 
@@ -49,7 +53,16 @@ function TableView({ refreshKey }) {
       )}
 
       {tableSelected.id && !isLoading && (
-        <Table data={tableData} columns={columns} />
+        <Table
+          data={tableData}
+          columns={columns}
+          numberOfRecords={numberOfRecords}
+          pageNumber={pageNumber}
+          pageLimit={pageLimit}
+          setPageLimit={setPageLimit}
+          setPageNumber={setPageNumber}
+          setRefreshKey={setRefreshKey}
+        />
       )}
     </>
   );

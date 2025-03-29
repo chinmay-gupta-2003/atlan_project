@@ -14,7 +14,7 @@ A web-based SQL query execution and visualization tool with AI-powered query gen
 
 ✅ **Database Management**
 
-- 📂 Sidebar displaying available databases & tables
+- 📂 Sidebar displaying available databases & tables (along with schema)
 - 🔚 Logout option for secure session handling
 
 ✅ **SQL Query Execution**
@@ -48,22 +48,22 @@ A web-based SQL query execution and visualization tool with AI-powered query gen
 
 ✅ Modular Styling
 
-- 🎨 Used module.css for scoped and maintainable styles
+- 🎨 Used modular CSS for scoped and maintainable styles
 
 ## 📸 Screenshots
 
-| Feature                                       | Screenshot                                        |
-| --------------------------------------------- | ------------------------------------------------- |
-| **Login Page**                                | ![Login](./public/images/login.png)               |
-| **Home Page / Sidebar / SQL Query Input**     | ![Home](./public/images/home.png)                 |
-| **AI Query Generation / Speech Recognition**  | ![AI Query](./public/images/ai-query.png)         |
-| **Query History**                             | ![History](./public/images/history.png)           |
-| **Table View (2000+ Rows) / Sorting & Limit** | ![Table View](./public/images/table-view.png)     |
-| **Bar Chart**                                 | ![Bar Chart](./public/images/bar-chart.png)       |
-| **Pie Chart**                                 | ![Pie Chart](./public/images/pie-chart.png)       |
-| **Line Chart**                                | ![Line Chart](./public/images/line-chart.png)     |
-| **Scatter Plot**                              | ![Scatter Plot](./public/images/scatter-plot.png) |
-| **Not Found Page**                            | ![Page Not Found](./public/images/notFound.png)   |
+| Feature                                             | Screenshot                                        |
+| --------------------------------------------------- | ------------------------------------------------- |
+| **Login Page**                                      | ![Login](./public/images/login.png)               |
+| **Home Page / Sidebar / SQL Query Input**           | ![Home](./public/images/home.png)                 |
+| **AI Query Generation / Speech Recognition**        | ![AI Query](./public/images/ai-query.png)         |
+| **Query History**                                   | ![History](./public/images/history.png)           |
+| **Table View (1 Million + Rows) / Sorting & Limit** | ![Table View](./public/images/table-view.png)     |
+| **Bar Chart**                                       | ![Bar Chart](./public/images/bar-chart.png)       |
+| **Pie Chart**                                       | ![Pie Chart](./public/images/pie-chart.png)       |
+| **Line Chart**                                      | ![Line Chart](./public/images/line-chart.png)     |
+| **Scatter Plot**                                    | ![Scatter Plot](./public/images/scatter-plot.png) |
+| **Not Found Page**                                  | ![Page Not Found](./public/images/notFound.png)   |
 
 ## 📦 Installed Plugins & Packages
 
