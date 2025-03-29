@@ -124,3 +124,7 @@ After implementing these optimizations, the Lighthouse score improved significan
 ### 📸 Lighthouse Results
 
 ![After Optimization](./public/images/afterOptimization.png)
+
+## 📝 Architecture and Application Flow
+
+![Flow](./public/images/flow.png)
