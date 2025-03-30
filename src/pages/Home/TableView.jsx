@@ -19,7 +19,7 @@ function TableView({ refreshKey, setRefreshKey }) {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const numberOfRecords = tableSelected.id === 404 ? 1000000 : 5000;
+  const numberOfRecords = tableSelected.id === 404 ? 10000000 : 5000;
 
   const fetchData = async () => {
     if (!tableSelected.id) return [];

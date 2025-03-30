@@ -3,18 +3,35 @@ import { useDispatch, useSelector } from "react-redux";
 import Chip from "components/Chip/Chip";
 import styles from "components/ViewSelector/ViewSelector.module.css";
 
-import { addQueryToHistory, setQuerySelected } from "store/databaseSlice";
+import {
+  addQueryToHistory,
+  setQuerySelected,
+  setTableSelected,
+  setViewSelected,
+} from "store/databaseSlice";
 import { formatDate } from "utils/formatDate";
+import { tables } from "constants/tables";
 
 function PredefinedQueries({ onQueryExecute }) {
   const dispatch = useDispatch();
-  const { querySelected } = useSelector((state) => state.database);
+  const { querySelected, databaseSelected, tableSelected } = useSelector(
+    (state) => state.database
+  );
 
   const handleViewChange = (key, label) => {
+    if (!tableSelected.id) {
+      const availableTables = tables[databaseSelected.id];
+
+      const randomTable =
+        availableTables[Math.floor(Math.random() * availableTables.length)];
+
+      dispatch(setTableSelected(randomTable));
+
+      dispatch(setViewSelected("table"));
+    } else onQueryExecute();
+
     dispatch(setQuerySelected(key));
     dispatch(addQueryToHistory({ time: formatDate(new Date()), query: label }));
-
-    onQueryExecute();
   };
 
   const queryOptions = [

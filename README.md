@@ -28,7 +28,7 @@ A web-based SQL query execution and visualization tool with AI-powered query gen
 - 🤖 Generate SQL queries using **Gemini OpenAI** from natural language
 - 🎙️ Speech-to-text support for hands-free query generation
 
-✅ **Data Visualization**
+✅ **Data Visualization with Export 📤**
 
 - 📊 **Table View** (Supports pagination, sorting, and result limiting, optimized for 1000s of rows)
 - 📈 **Charts & Graphs:**
@@ -46,7 +46,7 @@ A web-based SQL query execution and visualization tool with AI-powered query gen
 
 - 🔔 **Real-time alerts** for query execution status, errors, and AI suggestions
 
-✅ Modular Styling
+✅ **Modular Styling**
 
 - 🎨 Used modular CSS for scoped and maintainable styles
 

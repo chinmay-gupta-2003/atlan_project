@@ -19,7 +19,7 @@ import {
 import home from "assets/svg/home.svg";
 
 function Home() {
-  const { tableSelected, viewSelected } = useSelector(
+  const { databaseSelected, tableSelected, viewSelected } = useSelector(
     (state) => state.database
   );
 
@@ -57,10 +57,10 @@ function Home() {
   return (
     <div className={styles.container}>
       <Query onQueryExecute={handleQueryExecute} />
-      {tableSelected.id && <ViewSelector key={1} />}
-      {tableSelected.id && (
+      {databaseSelected.id && (
         <PredefinedQueries key={2} onQueryExecute={handleQueryExecute} />
       )}
+      {tableSelected.id && <ViewSelector key={1} />}
 
       {isLoading && (
         <div className={styles.loader}>
@@ -90,8 +90,7 @@ function Home() {
         <div className={styles.subContainer}>
           <img src={home} alt="image" className={styles.image} />
           <span>
-            Select database and table to use predefined queries and get valuable
-            insights.
+            Select database to use predefined queries and get valuable insights.
           </span>
         </div>
       )}
