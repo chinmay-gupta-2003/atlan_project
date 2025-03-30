@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import { BoltIcon, ClockIcon, SparklesIcon } from "@heroicons/react/24/solid";
+import { ClipLoader } from "react-spinners";
+import {
+  BoltIcon,
+  ClockIcon,
+  DocumentArrowDownIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/solid";
 
 import styles from "components/Query/Query.module.css";
+import QueryHistoryModal from "components/Modals/QueryHistoryModal";
+import GenerateQueryModal from "components/Modals/GenerateQueryModal";
 
 import {
   addQueryToHistory,
@@ -15,12 +23,11 @@ import {
 import { databases } from "constants/databases";
 import { tables } from "constants/tables";
 import { formatDate } from "utils/formatDate";
-import QueryHistoryModal from "components/Modals/QueryHistoryModal";
-import GenerateQueryModal from "components/Modals/GenerateQueryModal";
+import { exportToCSV } from "utils/exportToCSV";
 
 function Query({ onQueryExecute }) {
   const dispatch = useDispatch();
-  const { tableSelected, databaseSelected } = useSelector(
+  const { tableSelected, databaseSelected, viewSelected } = useSelector(
     (state) => state.database
   );
 
@@ -28,6 +35,7 @@ function Query({ onQueryExecute }) {
   const [active, setActive] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const [openModalGenerate, setOpenModalGenerate] = useState(false);
+  const [loading, setIsLoading] = useState(false);
 
   const handleFindClick = (queryText) => {
     if (!queryText) return toast.error("Please type a query");
@@ -87,6 +95,18 @@ function Query({ onQueryExecute }) {
       >
         <span>Execute</span>
         <BoltIcon height={16} />
+      </button>
+      <button
+        className={`${styles.btn} ${styles.exportBtn} ${
+          !tableSelected.id || !viewSelected ? styles.disabled : ""
+        }`}
+        onClick={() => exportToCSV(setIsLoading)}
+        type="submit"
+        disabled={!tableSelected.id || !viewSelected}
+      >
+        {loading && <ClipLoader size={16} color="#fff" />}
+        <span>Export Data</span>
+        <DocumentArrowDownIcon height={16} />
       </button>
       <button
         className={`${styles.btn} ${styles.btnGradient}`}
